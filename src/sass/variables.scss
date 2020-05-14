@@ -1,0 +1,46 @@
+// @include mixiColor(map-get($colorz, primary));
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400, 700);
+
+$colorz: (
+  primary: #09bbe6,
+  secondary: #0077a4 white: #fff1f1,
+  d9: #d9d9d9,
+  darkgrey: #707070,
+  green: #2bfc83,
+  lightgrey: #cacaca,
+  red: rgb(172, 1, 1),
+  orange: #ffa600,
+  heda: #60d7fd,
+  Lb: #45e1e2,
+);
+
+@mixin mixiColor($color) {
+  color: $color;
+  background-color: $color;
+}
+
+@mixin Imgbox($img) {
+  // opacity: 0.89;
+  height: 900px;
+  background-size: $img;
+}
+
+@mixin Flexbox($dir) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-content: center;
+}
+
+@mixin Txtbox($text) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: $text;
+  overflow: auto;
+  text-overflow: ellipsis;
+  align-items: baseline;
+  scrollbar-width: none;
+}
