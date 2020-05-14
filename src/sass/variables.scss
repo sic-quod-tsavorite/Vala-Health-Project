@@ -1,23 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@font-face {
+  font-family: walkway-black;
+  src: url('*path*\Walkway Black.ttf') format('truetype');
+}
+
 // @include mixiColor(map-get($colorz, primary));
-
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400, 700);
-
 $colorz: (
   primary: #09bbe6,
-  secondary: #0077a4 white: #fff1f1,
-  d9: #d9d9d9,
-  darkgrey: #707070,
+  secondary: #0077a4,
+  dni: #d9d9d9,
+  tertiary: #fff1f1,
+  dg: #999,
   green: #2bfc83,
   lightgrey: #cacaca,
   red: rgb(172, 1, 1),
   orange: #ffa600,
   heda: #60d7fd,
   Lb: #45e1e2,
+  lg1: linear-gradient(180deg, #0198c8 0, #027fb6 50%, #015f9f 65%, #024d93),
+  lg2: linear-gradient(-120deg, #4ceae7, #23bcd6 30%, #0298c8 45%, #0298c8),
+  lg3: linear-gradient(0, #0298c8 14%, #4cebe7 48%, #0198c8 83%),
 );
 
-@mixin mixiColor($color) {
+@mixin txtColor($color) {
   color: $color;
-  background-color: $color;
+}
+
+@mixin bgColor($colorbg) {
+  background-color: $colorbg;
+}
+// til lineargradients
+@mixin bgiColor($colorbgi) {
+  background-image: $colorbgi;
 }
 
 @mixin Imgbox($img) {
@@ -43,4 +57,12 @@ $colorz: (
   text-overflow: ellipsis;
   align-items: baseline;
   scrollbar-width: none;
+}
+
+@mixin Txtbtn($text) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: $text;
 }
