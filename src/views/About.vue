@@ -1,5 +1,5 @@
 <template>
-
+ 
     <p id="pp">pepepe</p>
 
 
@@ -13,9 +13,11 @@ export default {
 </script>
 
 <style lang="scss">
-
+#bg {
+    background-color: black;
+}
 #pp {
   @include Txtbox(walkway-black);
-  color: black;
+  color: white;
 }
 </style>
