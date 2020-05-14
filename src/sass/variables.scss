@@ -1,62 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @font-face {
-    font-family: walkway-black;
-    src: url('*path*\Walkway Black.ttf')  format('truetype');
+  font-family: walkway-black;
+  src: url('*path*\Walkway Black.ttf') format('truetype');
 }
-
 
 // @include mixiColor(map-get($colorz, primary));
 $colorz: (
-    primary: #09bbe6,
-    secondary: #0077a4,
-    dni: #D9D9D9,
-    tertiary: #fff1f1,
-    dg: #999,
-    green: #2bfc83,
-    lightgrey: #cacaca,
-    red: rgb(172, 1, 1),
-    orange: #ffa600,
-    heda: #60d7fd,
-    Lb: #45e1e2,
-    lg1: linear-gradient(180deg,#0198c8 0,#027fb6 50%,#015f9f 65%,#024d93),
-    lg2: linear-gradient(-120deg,#4ceae7,#23bcd6 30%,#0298c8 45%,#0298c8),
-    lg3: linear-gradient(0,#0298c8 14%,#4cebe7 48%,#0198c8 83%),
+  primary: #09bbe6,
+  secondary: #0077a4,
+  dni: #d9d9d9,
+  tertiary: #fff1f1,
+  dg: #999,
+  green: #2bfc83,
+  lightgrey: #cacaca,
+  red: rgb(172, 1, 1),
+  orange: #ffa600,
+  heda: #60d7fd,
+  Lb: #45e1e2,
+  lg1: linear-gradient(180deg, #0198c8 0, #027fb6 50%, #015f9f 65%, #024d93),
+  lg2: linear-gradient(-120deg, #4ceae7, #23bcd6 30%, #0298c8 45%, #0298c8),
+  lg3: linear-gradient(0, #0298c8 14%, #4cebe7 48%, #0198c8 83%),
 );
 
 @mixin txtColor($color) {
-    color:$color;
+  color: $color;
 }
 
 @mixin bgColor($colorbg) {
-    background-color:$colorbg;
+  background-color: $colorbg;
 }
 // til lineargradients
 @mixin bgiColor($colorbgi) {
-    background-image:$colorbgi;
+  background-image: $colorbgi;
 }
 
+@mixin Imgbox($img) {
+  // opacity: 0.89;
+  height: 900px;
+  background-size: $img;
+}
 
-@mixin Imgbox($img){
-    // opacity: 0.89;
-    height: 900px;
-    background-size: $img;
-  }
-
-@mixin Flexbox($dir){
-    display:flex;
-    flex-direction: $dir;
-    justify-content: center;
-    align-content: center;
+@mixin Flexbox($dir) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-content: center;
 }
 
 @mixin Txtbox($text) {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3em;
-    font-family: $text;
-    overflow: auto;
-    text-overflow: ellipsis;
-    align-items: baseline; 
-    scrollbar-width: none;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: $text;
+  overflow: auto;
+  text-overflow: ellipsis;
+  align-items: baseline;
+  scrollbar-width: none;
+}
+
+@mixin Txtbtn($text) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: $text;
+}
