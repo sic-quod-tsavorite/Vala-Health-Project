@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Login from '../components/login.vue'
-import Mypage from '../components/mypage.vue'
-import Survey from '../components/survey.vue'
-import Booking from '../components/booking.vue'
-import BookingInfo from '../components/bookingInfo.vue'
-import Msg from '../components/msg.vue'
-import MsgInfo from '../components/msgInfo.vue'
+import Login from '../components/Login.vue'
+import Mypage from '../components/Mypage.vue'
+import Survey from '../components/Survey.vue'
+import Booking from '../components/Booking.vue'
+import BookingInfo from '../components/BookingInfo.vue'
+import Msg from '../components/Msg.vue'
+import MsgInfo from '../components/MsgInfo.vue'
+import Thanks from '../components/Thanks.vue'
 
 Vue.use(VueRouter)
 
