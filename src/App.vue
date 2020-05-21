@@ -21,9 +21,9 @@
       <router-view />
     </v-content>
 
-    <footer class="fot" id="foot">
+    <v-footer class="fot" id="foot">
       <v-spacer></v-spacer>
-    </footer>
+    </v-footer>
   </v-app>
 </template>
 
