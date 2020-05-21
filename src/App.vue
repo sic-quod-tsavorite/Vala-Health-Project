@@ -4,7 +4,7 @@
       <v-spacer></v-spacer>
       <div class="d-flex-shrink-1">
         <router-link class="routerLink" to="/">
-          <v-img src="https://valahealth.com/img/vala-logo.svg" width="100" />
+          <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
         </router-link>
       </div>
       <v-spacer></v-spacer>
@@ -36,6 +36,10 @@ export default {};
 </script>
 
 <style lang="scss">
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
 @media (min-width: 1024px) {
   #loginbtn {
     @include Txtbtn(Raleway);
