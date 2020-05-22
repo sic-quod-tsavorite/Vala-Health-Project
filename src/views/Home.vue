@@ -136,6 +136,151 @@
         </v-col>
       </v-row>
     </v-container>
+    <v-container>
+      <v-row justify="center">
+        <v-col cols="auto">
+          <v-card
+            img="https://cdn.discordapp.com/attachments/294221981455220737/713295076364648458/unknown.png"
+            id="userCard"
+            class="userCard1"
+          ></v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card id="userCard" class="userCard2">
+            <h4>
+              “This has probably been the most helpful counseling of my life.
+              The therapist made me feel so comfortable. Very considerate yet
+              still professional. I felt like I was talking with an old friend.”
+            </h4>
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card id="userCard" class="userCard3">
+            <h4>
+              “Since I have started using Vala, I feel happier, less stressed
+              and in control. Vala is convenient, affordable and simple to use”
+            </h4>
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            id="userCard"
+            class="userCard4"
+            img="https://cdn.discordapp.com/attachments/702469113825460295/712619777298006026/unknown.png"
+          ></v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container id="docCards">
+      <v-row>
+        <v-col>
+          <v-card id="docCard">
+            <h1>Susan</h1>
+            <h3>Specialties</h3>
+            <ul>
+              <li>Stress, Anxiety</li>
+              <li>Self esteem</li>
+              <li>Depression</li>
+            </ul>
+            <h4>Years of experience: 3</h4>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            id="docImgCard"
+            img="https://cdn.discordapp.com/attachments/294221981455220737/713324101028151367/unknown.png"
+          ></v-card>
+        </v-col>
+        <v-col>
+          <v-card id="docCard">
+            <h1>Judy</h1>
+            <h3>Specialties</h3>
+            <ul>
+              <li>Trauma and abuse</li>
+              <li>Parenting issues</li>
+              <li>Depression</li>
+            </ul>
+            <h4>Years of experience: 8</h4>
+          </v-card>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-card
+            id="docImgCard"
+            class="botImgDoc"
+            img="https://cdn.discordapp.com/attachments/294221981455220737/713324716743589918/unknown.png"
+          ></v-card>
+        </v-col>
+        <v-col>
+          <v-card id="docCard">
+            <h1>Greg</h1>
+            <h3>Specialties</h3>
+            <ul>
+              <li>Addictions</li>
+              <li>Career difficulties</li>
+              <li>Depression</li>
+            </ul>
+            <h4>Years of experience: 6</h4>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card
+            id="docImgCard"
+            class="botImgDoc"
+            img="https://cdn.discordapp.com/attachments/294221981455220737/713325151495913472/unknown.png"
+          ></v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container id="book">
+      <h1>
+        Ready to speak to Vala?
+      </h1>
+      <v-btn outlined rounded large width="200px" color="white">Book</v-btn>
+    </v-container>
+    <div id="trustpilot">
+      <v-container id="trustCont">
+        <h1>Vala is rated excellent on Trustpilot:</h1>
+        <v-row justify="center">
+          <v-col cols="auto">
+            <v-img
+              height="70"
+              width="70"
+              src="https://valahealth.com/img/trustpilot_1.svg"
+            ></v-img>
+          </v-col>
+          <v-col cols="auto">
+            <v-img
+              height="70"
+              width="70"
+              src="https://valahealth.com/img/trustpilot_1.svg"
+            ></v-img>
+          </v-col>
+          <v-col cols="auto">
+            <v-img
+              height="70"
+              width="70"
+              src="https://valahealth.com/img/trustpilot_1.svg"
+            ></v-img>
+          </v-col>
+          <v-col cols="auto">
+            <v-img
+              height="70"
+              width="70"
+              src="https://valahealth.com/img/trustpilot_1.svg"
+            ></v-img>
+          </v-col>
+          <v-col cols="auto">
+            <v-img
+              height="70"
+              width="70"
+              src="https://valahealth.com/img/trustpilot_3.svg"
+            ></v-img>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
   </v-app>
 </template>
 
@@ -155,7 +300,7 @@ export default {
 
 #banner {
   padding-top: 5%;
-  margin: 5% 0;
+  margin-bottom: 5%;
   h1 {
     text-align: center;
     color: white;
@@ -207,14 +352,14 @@ export default {
   background: rgba(243, 243, 243, 0.8);
   h1 {
     margin-bottom: 5%;
-    font-size: 225%;
+    font-size: 35px;
   }
   h3 {
     margin-bottom: 10%;
-    font-size: 150%;
+    font-size: 25px;
   }
   h4 {
-    font-size: 130%;
+    font-size: 20px;
   }
   h2 {
     margin-bottom: 5%;
@@ -228,6 +373,71 @@ export default {
 }
 #valaInfB {
   background: rgba(9, 205, 230, 0.8);
+}
+
+#userCard {
+  width: 40vw;
+  height: 25vw;
+  background: rgba(243, 243, 243, 0.8);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 10%;
+  h4 {
+    font-size: 25px;
+  }
+}
+
+.userCard1 {
+  z-index: 3;
+  margin: 10% -10% auto auto;
+}
+.userCard2 {
+  z-index: 4;
+  margin: auto auto 10% -5%;
+}
+.userCard3 {
+  z-index: 2;
+  margin: 5% -10% auto auto;
+}
+.userCard4 {
+  z-index: 1;
+  margin: -5% auto auto -5%;
+}
+
+#docCards {
+  #docCard {
+    padding: 10%;
+    height: 300px;
+  }
+  #docImgCard {
+    height: 650px;
+    min-width: 350px;
+  }
+  .botImgDoc {
+    margin-top: -350px;
+  }
+}
+
+#book {
+  text-align: center;
+  h1 {
+    margin: 5% auto 2.5% auto;
+    color: white;
+  }
+}
+
+#trustpilot {
+  background: #f3f5f5;
+  width: 100vw;
+  text-align: center;
+  margin-top: 5%;
+  #trustCont {
+    margin: 1.5% auto;
+    h1 {
+      margin-bottom: 1.5%;
+    }
+  }
 }
 
 @media (min-width: 960px) {
