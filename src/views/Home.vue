@@ -8,23 +8,25 @@
     >
       <h1>Affordable, private online mental health support</h1>
       <v-row justify="center"
-        ><v-btn outlined rounded color="white" x-large>Book now</v-btn></v-row
+        ><v-btn outlined rounded color="white" x-large id="bannerBtn"
+          >Book now</v-btn
+        ></v-row
       >
     </v-img>
     <v-container>
       <v-row>
-        <v-col cols="3">
-          <v-card id="mentalHealth" height="15vw"
+        <v-col cols="12" sm="6" md="4" lg="3">
+          <v-card id="mentalHealth" class="mentalCard1"
             ><h2>Depression</h2>
             <h3 id="hovTxt">
               place holder text
             </h3></v-card
           >
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="6" md="4" lg="3">
           <v-card
             id="mentalHealth"
-            height="30vw"
+            class="mentalCard2"
             img="https://valahealth.com/img/aspects-counselling-2.jpg"
             ><h2 class="wh2">Relationships</h2>
             <h3 id="hovTxt" class="wh2">
@@ -32,18 +34,18 @@
             </h3></v-card
           >
         </v-col>
-        <v-col cols="3">
-          <v-card id="mentalHealth" height="15vw"
+        <v-col cols="12" sm="6" md="4" lg="3">
+          <v-card id="mentalHealth" class="mentalCard3"
             ><h2>Stress</h2>
             <h3 id="hovTxt">
               place holder text
             </h3></v-card
           >
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="6" md="12" lg="3">
           <v-card
             id="mentalHealth"
-            height="30vw"
+            class="mentalCard4"
             img="https://valahealth.com/img/aspects-counselling-4.jpg"
             ><h2 class="wh2">Anxiety</h2>
             <h3 id="hovTxt" class="wh2">
@@ -53,11 +55,10 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="3">
+        <v-col cols="12" sm="6" md="4" lg="3">
           <v-card
             id="mentalHealth"
-            class="mentalCard"
-            height="30vw"
+            class="mentalCard5"
             img="https://valahealth.com/img/aspects-counselling-1.jpg"
             ><h2 class="wh2">Self-Esteem</h2>
             <h3 id="hovTxt" class="wh2">
@@ -65,19 +66,18 @@
             </h3></v-card
           >
         </v-col>
-        <v-col cols="3">
-          <v-card id="mentalHealth" height="15vw"
+        <v-col cols="12" sm="6" md="4" lg="3">
+          <v-card id="mentalHealth" class="mentalCard6"
             ><h2>Addiction</h2>
             <h3 id="hovTxt">
               place holder text
             </h3></v-card
           >
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="6" md="4" lg="3">
           <v-card
             id="mentalHealth"
-            class="mentalCard"
-            height="30vw"
+            class="mentalCard7"
             img="https://valahealth.com/img/aspects-counselling-3.jpg"
             ><h2 class="wh2">Grief</h2>
             <h3 id="hovTxt" class="wh2">
@@ -85,12 +85,56 @@
             </h3></v-card
           >
         </v-col>
-        <v-col cols="3">
-          <v-card id="mhLast" height="15vw"><h2>... and more</h2></v-card>
+        <v-col cols="12" sm="6" md="12" lg="3">
+          <v-card id="mhLast"><h2>... and more</h2></v-card>
         </v-col>
       </v-row>
     </v-container>
-    <v-container id="valaInfCont">
+    <v-container id="valaInfContMobil">
+      <v-row justify="center">
+        <v-col cols="auto">
+          <v-card
+            class="valaInf"
+            id="valaInfWhiteTxt"
+            img="https://cdn.discordapp.com/attachments/702469113825460295/712651293222633482/unknown.png"
+          >
+            <h1>Welcome to Vala</h1>
+            <h3>
+              Vala is an online consulting service that enables people to have
+              health and social care appointments from home or wherever is
+              convenient.
+            </h3>
+            <v-btn outlined rounded large id="valaInfBtn1">About Us</v-btn>
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card class="valaInf" id="valaInfB">
+            <h1>Life Support</h1>
+            <h4>
+              Our qualified, empathetic team are available with many years of
+              experience in systemic relational counselling. We have tried to
+              make it as easy for you as possible to find the right doctor. You
+              can find the right doctor for with our detailed personas. If you
+              don’t feel comfortable finding one yourself we have also made it
+              possible to run a survey. Through the survey you will find the
+              doctor just right for you
+            </h4>
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card class="valaInf" id="valaInfW">
+            <h2>Ready to speak to Vala?</h2>
+            <v-btn outlined rounded large id="valaInfBtn">Book Now</v-btn>
+            <h3 id="valaH3noM">
+              Before booking can you run a survey and find the doctor that is
+              just right for you!
+            </h3>
+            <v-btn outlined rounded large id="valaInfBtn">Run Survey</v-btn>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container id="valaInfContDesk">
       <v-row justify="center">
         <v-col cols="auto">
           <v-card class="valaInf" id="valaInfW">
@@ -295,13 +339,17 @@ export default {};
 }
 
 #banner {
-  padding-top: 5%;
   margin-bottom: 5%;
   h1 {
     text-align: center;
     color: white;
-    margin-bottom: 5%;
+    margin-top: -5%;
     font-family: walkway-black;
+    transform: scale(0.5);
+  }
+  #bannerBtn {
+    margin-top: -5%;
+    transform: scale(0.75);
   }
 }
 
@@ -312,7 +360,7 @@ export default {};
   justify-content: center;
   h2 {
     position: absolute;
-    transition: 0.3s;
+    transition: 0.4s;
   }
   .wh2 {
     color: white;
@@ -320,48 +368,73 @@ export default {};
   #hovTxt {
     text-align: center;
     opacity: 0;
-    transition: 0.3s;
   }
 }
 #mentalHealth:hover {
   h2 {
     opacity: 0;
-    transition: 0.3s;
   }
   #hovTxt {
     opacity: 1;
-    transition: 0.3s;
+    transition: 0.4s;
   }
 }
-.mentalCard {
-  margin-top: -15vw;
+.mentalCard1,
+.mentalCard3,
+.mentalCard6,
+#mhLast {
+  height: 50vw;
+}
+.mentalCard2,
+.mentalCard4,
+.mentalCard5,
+.mentalCard7 {
+  height: 100vw;
 }
 
-#valaInfCont {
+#valaInfContDesk {
+  display: none;
+}
+#valaInfContMobil {
   margin: 5% auto;
 }
 .valaInf {
-  width: 80vw;
-  height: 50vw;
+  width: 100vw;
+  height: 65vw;
   text-align: center;
-  padding: 10%;
+  padding: 5%;
   background: rgba(243, 243, 243, 0.8);
   h1 {
-    margin-bottom: 5%;
-    font-size: 35px;
+    font-family: walkway-black;
+    margin-bottom: 2%;
+    font-size: 25px;
   }
   h3 {
     margin-bottom: 10%;
-    font-size: 25px;
+    font-size: 15px;
   }
   h4 {
-    font-size: 20px;
+    font-size: 12px;
   }
   h2 {
     margin-bottom: 5%;
   }
   #valaInfBtn {
     margin-bottom: 5%;
+  }
+  #valaH3noM {
+    margin-bottom: 2%;
+  }
+}
+#valaInfWhiteTxt {
+  h1 {
+    color: white;
+  }
+  h3 {
+    color: white;
+  }
+  #valaInfBtn1 {
+    color: white;
   }
 }
 #valaInfW {
@@ -436,16 +509,133 @@ export default {};
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 600px) {
+  #banner {
+    padding-top: 5%;
+    h1 {
+      margin-bottom: 5%;
+    }
+  }
+  .mentalCard1,
+  .mentalCard2,
+  .mentalCard3,
+  .mentalCard4,
+  .mentalCard5,
+  .mentalCard6,
+  .mentalCard7,
+  #mhLast {
+    height: 60vw;
+  }
   .valaInf {
-    width: 30vw;
-    height: 25vw;
+    width: 80vw;
+    height: 50vw;
+    h1 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 20px;
+      margin-bottom: 5%;
+    }
+    h4 {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  #banner {
+    h1 {
+      margin-top: 0;
+      transform: scale(1);
+    }
+    #bannerBtn {
+      margin-top: 0;
+      transform: scale(1);
+    }
+  }
+  .mentalCard1,
+  .mentalCard2,
+  .mentalCard3,
+  .mentalCard5,
+  .mentalCard6,
+  .mentalCard7 {
+    height: 45vw;
+  }
+  .mentalCard4 {
+    height: 30vw;
+  }
+  #mhLast {
+    height: 15vw;
+  }
+  #valaInfContDesk {
+    display: unset;
+  }
+  #valaInfContMobil {
+    display: none;
+  }
+  .valaInf {
+    width: 35vw;
+    height: 35vw;
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 17px;
+    }
+    h4 {
+      font-size: 15px;
+    }
+  }
+}
+@media (min-width: 1264px) {
+  .mentalCard1,
+  .mentalCard3,
+  .mentalCard6,
+  #mhLast {
+    height: 15vw;
+  }
+  .mentalCard2,
+  .mentalCard4,
+  .mentalCard5,
+  .mentalCard7 {
+    height: 30vw;
+  }
+  .mentalCard5,
+  .mentalCard7 {
+    margin-top: -15vw;
+  }
+  .valaInf {
+    height: 30vw;
+    padding: 10%;
+    h1 {
+      font-size: 35px;
+      margin-bottom: 5%;
+    }
+    h2 {
+      font-size: 21px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    #valaInfBtn {
+      margin-bottom: 10%;
+    }
   }
 }
 @media (min-width: 1904px) {
   .valaInf {
     width: 40vw;
     height: 25vw;
+    h2,
+    h3 {
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 21px;
+    }
   }
 }
 @media (min-width: 2172px) {

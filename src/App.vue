@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import Vue from "vue";
-import VueKinesis from "vue-kinesis";
+import Vue from 'vue';
+import VueKinesis from 'vue-kinesis';
 
 Vue.use(VueKinesis);
 export default {};
@@ -35,7 +35,7 @@ export default {};
 
 <style lang="scss">
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -50,19 +50,19 @@ export default {};
     border-bottom: 1px solid #dcdfdf !important;
   }
 
-  #loginbtn {
-    @include Txtbtn(Raleway);
-    overflow-y: none;
-    font-weight: 500;
-    background-color: #fff;
-    border-radius: 100px;
-    color: #48a0f7;
-    border: 2px solid;
-    font-size: 15px;
-    padding: 9px 25px;
-    text-transform: capitalize;
-    .routerLink {
-      text-decoration: none;
+  .routerLink {
+    text-decoration: none;
+    #loginbtn {
+      @include Txtbtn(Raleway);
+      overflow-y: none;
+      font-weight: 500;
+      background-color: #fff;
+      border-radius: 100px;
+      color: #48a0f7;
+      border: 2px solid;
+      font-size: 15px;
+      padding: 9px 25px;
+      text-transform: capitalize;
     }
   }
 
@@ -78,12 +78,9 @@ export default {};
       #0298c8 95%,
       #0298c8
     );
-    .routerLink {
-      text-decoration: none;
-    }
   }
 
-  #aboutbtn {
+  /*#aboutbtn {
     margin-left: 0.3em;
     @include Txtbtn(Raleway);
     font-weight: 500;
@@ -108,7 +105,7 @@ export default {};
     .routerLink {
       color: white;
     }
-  }
+  }*/
 }
 
 @media (max-width: 1024px) {
