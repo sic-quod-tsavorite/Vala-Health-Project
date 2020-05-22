@@ -1,67 +1,73 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Login from '../components/Login.vue'
-import Mypage from '../components/Mypage.vue'
-import Survey from '../components/Survey.vue'
-import Booking from '../components/Booking.vue'
-import BookingInfo from '../components/BookingInfo.vue'
-import Msg from '../components/Msg.vue'
-import MsgInfo from '../components/MsgInfo.vue'
-import Thanks from '../components/Thanks.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
+import Login from "../components/Login.vue";
+import Mypage from "../components/Mypage.vue";
+import mypagetest from "../components/mypagetest.vue";
+import Survey from "../components/Survey.vue";
+import Booking from "../components/Booking.vue";
+import BookingInfo from "../components/BookingInfo.vue";
+import Msg from "../components/Msg.vue";
+import MsgInfo from "../components/MsgInfo.vue";
+import Thanks from "../components/Thanks.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/home',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/login',
-    name: 'Login',
-    component: Login
+    path: "/login",
+    name: "Login",
+    component: Login,
   },
   {
-    path: '/mypage',
-    name: 'mypage',
-    component: Mypage
+    path: "/mypage",
+    name: "mypage",
+    component: Mypage,
   },
   {
-    path: '/survey',
-    name: 'survey',
-    component: Survey
+    path: "/mypagetest",
+    name: "mypagetest",
+    component: mypagetest,
   },
   {
-    path: '/booking',
-    name: 'booking',
-    component: Booking
+    path: "/survey",
+    name: "survey",
+    component: Survey,
   },
   {
-    path: '/thanks',
-    name: 'thanks',
-    component: Thanks
+    path: "/booking",
+    name: "booking",
+    component: Booking,
   },
   {
-    path: '/bookingInfo',
-    name: 'bookingInfo',
-    component: BookingInfo
+    path: "/thanks",
+    name: "thanks",
+    component: Thanks,
   },
   {
-    path: '/msg',
-    name: 'msg',
-    component: Msg
+    path: "/bookingInfo",
+    name: "bookingInfo",
+    component: BookingInfo,
   },
   {
-  path: '/msgInfo',
-    name: 'msgInfo',
-    component: MsgInfo
+    path: "/msg",
+    name: "msg",
+    component: Msg,
   },
-]
+  {
+    path: "/msgInfo",
+    name: "msgInfo",
+    component: MsgInfo,
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes,
 });
