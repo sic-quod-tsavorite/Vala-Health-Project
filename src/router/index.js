@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Login from "../components/Login.vue";
 import Mypage from "../components/Mypage.vue";
-import mypagetest from "../components/mypagetest.vue";
 import Survey from "../components/Survey.vue";
 import Booking from "../components/Booking.vue";
 import BookingInfo from "../components/BookingInfo.vue";
@@ -28,11 +27,6 @@ const routes = [
     path: "/mypage",
     name: "mypage",
     component: Mypage,
-  },
-  {
-    path: "/mypagetest",
-    name: "mypagetest",
-    component: mypagetest,
   },
   {
     path: "/survey",
