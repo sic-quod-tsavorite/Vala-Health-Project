@@ -285,11 +285,7 @@
 </template>
 
 <script>
-export default {
-  data: () => ({
-    isActive: false,
-  }),
-};
+export default {};
 </script>
 
 <style lang="scss">

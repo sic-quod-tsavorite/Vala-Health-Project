@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @font-face {
   font-family: walkway-black;
-  src: url('*path*\Walkway Black.ttf') format('truetype');
+  src: url("*path*\Walkway Black.ttf") format("truetype");
 }
 
-// @include mixiColor(map-get($colorz, primary));
+// @include bgColor(map-get($colorz, primary));
 $colorz: (
   primary: #09bbe6,
   secondary: #0077a4,
@@ -35,8 +35,6 @@ $colorz: (
 }
 
 @mixin Imgbox($img) {
-  // opacity: 0.89;
-  height: 900px;
   background-size: $img;
 }
 
@@ -51,7 +49,6 @@ $colorz: (
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3em;
   font-family: $text;
   overflow: auto;
   text-overflow: ellipsis;
