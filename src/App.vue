@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar id="header" app color="white" dark>
+    <v-app-bar class="header" color="white" app flat>
       <v-spacer></v-spacer>
       <div class="d-flex-shrink-1">
         <router-link class="routerLink" to="/">
@@ -8,13 +8,11 @@
         </router-link>
       </div>
       <v-spacer></v-spacer>
-
-      <v-btn id="loginbtn">
-        <router-link class="routerLink" to="/login">Login</router-link>
-      </v-btn>
-      <v-btn id="aboutbtn">
-        <router-link class="routerLink" to="/about">About</router-link>
-      </v-btn>
+      <router-link class="routerLink" to="/login">
+        <v-btn id="loginbtn" depressed>
+          Login
+        </v-btn>
+      </router-link>
     </v-app-bar>
 
     <v-content>
@@ -28,8 +26,8 @@
 </template>
 
 <script>
-import Vue from 'vue';
-import VueKinesis from 'vue-kinesis';
+import Vue from "vue";
+import VueKinesis from "vue-kinesis";
 
 Vue.use(VueKinesis);
 export default {};
@@ -37,13 +35,23 @@ export default {};
 
 <style lang="scss">
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 @media (min-width: 1024px) {
+  .header {
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1px solid #dcdfdf !important;
+  }
+  .v-app-bar.v-app-bar--fixed,
+  .theme--light.v-app-bar.v-toolbar.v-sheet,
+  .theme--light.v-toolbar.v-sheet {
+    border-bottom: 1px solid #dcdfdf !important;
+  }
+
   #loginbtn {
     @include Txtbtn(Raleway);
-
     overflow-y: none;
     font-weight: 500;
     background-color: #fff;
@@ -71,7 +79,7 @@ export default {};
       #0298c8
     );
     .routerLink {
-      color: white;
+      text-decoration: none;
     }
   }
 

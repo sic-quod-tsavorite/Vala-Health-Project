@@ -1,5 +1,18 @@
 <template>
   <v-content id="mpbg">
+    <v-app-bar class="header" color="white" app flat>
+      <v-spacer></v-spacer>
+      <div class="d-flex-shrink-1">
+        <router-link class="routerLink" to="/">
+          <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
+        </router-link>
+      </div>
+      <v-spacer></v-spacer>
+
+      <v-btn id="loginbtn">
+        <router-link class="routerLink" to="/">Logout</router-link>
+      </v-btn>
+    </v-app-bar>
     <v-row justify="center">
       <v-card id="wbg">
         Name: John Smith
@@ -101,6 +114,7 @@ export default {
 @media (min-width: 1024px) {
   #mpbg {
     @include Flexbox(column);
+    margin-top: -64px;
     min-height: 110vh;
     background: linear-gradient(0, #0298c8 14%, #4cebe7 48%, #0198c8 83%);
   }
@@ -111,6 +125,7 @@ export default {
     width: 50%;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 5%;
     h1 {
       margin-top: 2%;
       text-align: left;
