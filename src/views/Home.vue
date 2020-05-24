@@ -98,13 +98,15 @@
             id="valaInfWhiteTxt"
             img="https://cdn.discordapp.com/attachments/702469113825460295/712651293222633482/unknown.png"
           >
-            <h1>Welcome to Vala</h1>
-            <h3>
-              Vala is an online consulting service that enables people to have
-              health and social care appointments from home or wherever is
-              convenient.
-            </h3>
-            <v-btn outlined rounded large id="valaInfBtn1">About Us</v-btn>
+            <div>
+              <h1>Welcome to Vala</h1>
+              <h3>
+                Vala is an online consulting service that enables people to have
+                health and social care appointments from home or wherever is
+                convenient.
+              </h3>
+              <v-btn outlined rounded large>About Us</v-btn>
+            </div>
           </v-card>
         </v-col>
         <v-col cols="auto">
@@ -180,7 +182,40 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-container>
+    <v-container id="userCardMobil">
+      <v-row justify="center">
+        <v-col cols="auto">
+          <v-card
+            img="https://cdn.discordapp.com/attachments/294221981455220737/713295076364648458/unknown.png"
+            id="userCard"
+            class="userCard1"
+            ><div>
+              <h4>
+                “This has probably been the most helpful counseling of my life.
+                The therapist made me feel so comfortable. Very considerate yet
+                still professional. I felt like I was talking with an old
+                friend.”
+              </h4>
+            </div>
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card
+            id="userCard"
+            class="userCard4"
+            img="https://cdn.discordapp.com/attachments/702469113825460295/712619777298006026/unknown.png"
+            ><div>
+              <h4>
+                “Since I have started using Vala, I feel happier, less stressed
+                and in control. Vala is convenient, affordable and simple to
+                use”
+              </h4>
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container id="userCardDesk">
       <v-row justify="center">
         <v-col cols="auto">
           <v-card
@@ -215,7 +250,73 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-container id="docCards">
+    <v-container id="docCardsMobil">
+      <v-row>
+        <v-row id="docCardRow">
+          <v-col>
+            <v-card id="docCard">
+              <h1>Susan</h1>
+              <h3>Specialties</h3>
+              <ul>
+                <li>Stress, Anxiety</li>
+                <li>Self esteem</li>
+                <li>Depression</li>
+              </ul>
+              <h4>Years of experience: 3</h4>
+            </v-card>
+          </v-col>
+          <v-col>
+            <v-card
+              id="docImgCard"
+              class="botImgDoc"
+              img="https://cdn.discordapp.com/attachments/294221981455220737/713324716743589918/unknown.png"
+            ></v-card>
+          </v-col>
+        </v-row>
+        <v-row id="docCardRow">
+          <v-col>
+            <v-card id="docCard">
+              <h1>Greg</h1>
+              <h3>Specialties</h3>
+              <ul>
+                <li>Addictions</li>
+                <li>Career difficulties</li>
+                <li>Depression</li>
+              </ul>
+              <h4>Years of experience: 6</h4>
+            </v-card>
+          </v-col>
+          <v-col>
+            <v-card
+              id="docImgCard"
+              img="https://cdn.discordapp.com/attachments/294221981455220737/713324101028151367/unknown.png"
+            ></v-card>
+          </v-col>
+        </v-row>
+        <v-row id="docCardRow" justify="center">
+          <v-col cols="auto">
+            <v-card id="docCard">
+              <h1>Judy</h1>
+              <h3>Specialties</h3>
+              <ul>
+                <li>Trauma and abuse</li>
+                <li>Parenting issues</li>
+                <li>Depression</li>
+              </ul>
+              <h4>Years of experience: 8</h4>
+            </v-card>
+          </v-col>
+          <v-col cols="auto">
+            <v-card
+              id="docImgCard"
+              class="botImgDoc"
+              img="https://cdn.discordapp.com/attachments/294221981455220737/713325151495913472/unknown.png"
+            ></v-card>
+          </v-col>
+        </v-row>
+      </v-row>
+    </v-container>
+    <v-container id="docCardsDesk">
       <v-row>
         <v-col>
           <v-card id="docCard">
@@ -281,7 +382,9 @@
       <h1>
         Ready to speak to Vala?
       </h1>
-      <v-btn outlined rounded large width="200px" color="white">Book</v-btn>
+      <v-btn outlined rounded large width="200px" color="white" id="bookBtn"
+        >Book</v-btn
+      >
     </v-container>
     <div id="trustpilot">
       <v-container id="trustCont">
@@ -289,36 +392,31 @@
         <v-row justify="center">
           <v-col cols="auto">
             <v-img
-              height="70"
-              width="70"
+              id="tpImg"
               src="https://valahealth.com/img/trustpilot_1.svg"
             ></v-img>
           </v-col>
           <v-col cols="auto">
             <v-img
-              height="70"
-              width="70"
+              id="tpImg"
               src="https://valahealth.com/img/trustpilot_1.svg"
             ></v-img>
           </v-col>
           <v-col cols="auto">
             <v-img
-              height="70"
-              width="70"
+              id="tpImg"
               src="https://valahealth.com/img/trustpilot_1.svg"
             ></v-img>
           </v-col>
           <v-col cols="auto">
             <v-img
-              height="70"
-              width="70"
+              id="tpImg"
               src="https://valahealth.com/img/trustpilot_1.svg"
             ></v-img>
           </v-col>
           <v-col cols="auto">
             <v-img
-              height="70"
-              width="70"
+              id="tpImg"
               src="https://valahealth.com/img/trustpilot_3.svg"
             ></v-img>
           </v-col>
@@ -392,12 +490,14 @@ export default {};
   height: 100vw;
 }
 
-#valaInfContDesk {
-  display: none;
-}
 #valaInfContMobil {
   margin: 5% auto;
 }
+
+#valaInfContDesk {
+  display: none;
+}
+
 .valaInf {
   width: 100vw;
   height: 65vw;
@@ -427,14 +527,12 @@ export default {};
   }
 }
 #valaInfWhiteTxt {
-  h1 {
-    color: white;
-  }
-  h3 {
-    color: white;
-  }
-  #valaInfBtn1 {
-    color: white;
+  padding: 0;
+  div {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 5%;
   }
 }
 #valaInfW {
@@ -444,48 +542,41 @@ export default {};
   background: rgba(9, 205, 230, 0.8);
 }
 
+#userCardDesk {
+  display: none;
+}
+
 #userCard {
-  width: 40vw;
-  height: 25vw;
-  background: rgba(243, 243, 243, 0.8);
+  width: 100vw;
+  height: 40vh;
   text-align: center;
   display: flex;
   align-items: center;
-  padding: 10%;
-  h4 {
-    font-size: 25px;
-  }
-}
-
-.userCard1 {
-  z-index: 3;
-  margin: 10% -10% auto auto;
-}
-.userCard2 {
-  z-index: 4;
-  margin: auto auto 10% -5%;
-}
-.userCard3 {
-  z-index: 2;
-  margin: 5% -10% auto auto;
-}
-.userCard4 {
-  z-index: 1;
-  margin: -5% auto auto -5%;
-}
-
-#docCards {
-  #docCard {
+  padding: 0;
+  div {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
     padding: 10%;
-    height: 300px;
   }
-  #docImgCard {
-    height: 650px;
-    min-width: 350px;
+  h4 {
+    font-size: 20px;
   }
-  .botImgDoc {
-    margin-top: -350px;
-  }
+}
+
+#docCardsDesk {
+  display: none;
+}
+
+#docCard {
+  padding: 10%;
+  height: 30vh;
+  width: 100vw;
+  margin-top: 10%;
+}
+#docImgCard {
+  height: 50vh;
+  width: 100vw;
 }
 
 #book {
@@ -493,6 +584,10 @@ export default {};
   h1 {
     margin: 5% auto 2.5% auto;
     color: white;
+  }
+  h1,
+  #bookBtn {
+    transform: scale(0.7);
   }
 }
 
@@ -503,8 +598,13 @@ export default {};
   margin-top: 5%;
   #trustCont {
     margin: 1.5% auto;
+    transform: scale(0.8);
     h1 {
       margin-bottom: 1.5%;
+    }
+    #tpImg {
+      width: 50px;
+      height: 50px;
     }
   }
 }
@@ -540,6 +640,32 @@ export default {};
       font-size: 16px;
     }
   }
+  #userCard {
+    h4 {
+      font-size: 30px;
+    }
+  }
+  #docCard {
+    height: 30vh;
+  }
+  #docImgCard {
+    height: 65vh;
+  }
+  #book {
+    h1,
+    #bookBtn {
+      transform: scale(1);
+    }
+  }
+  #trustpilot {
+    #trustCont {
+      transform: scale(0.9);
+      #tpImg {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
 }
 
 @media (min-width: 960px) {
@@ -567,11 +693,12 @@ export default {};
   #mhLast {
     height: 15vw;
   }
-  #valaInfContDesk {
-    display: unset;
-  }
+
   #valaInfContMobil {
     display: none;
+  }
+  #valaInfContDesk {
+    display: unset;
   }
   .valaInf {
     width: 35vw;
@@ -586,7 +713,29 @@ export default {};
       font-size: 15px;
     }
   }
+  #userCard {
+    max-width: 700px;
+  }
+  #docCardRow {
+    width: 40%;
+    margin-top: 5%;
+  }
+  #docCard {
+    height: 30vh;
+    width: 45vw;
+    margin-top: 0;
+  }
+  #docImgCard {
+    height: 50vh;
+    width: 45vw;
+  }
+  #trustpilot {
+    #trustCont {
+      transform: scale(1);
+    }
+  }
 }
+
 @media (min-width: 1264px) {
   .mentalCard1,
   .mentalCard3,
@@ -605,6 +754,7 @@ export default {};
     margin-top: -15vw;
   }
   .valaInf {
+    width: 29vw;
     height: 30vw;
     padding: 10%;
     h1 {
@@ -624,6 +774,59 @@ export default {};
       margin-bottom: 10%;
     }
   }
+
+  #userCardMobil {
+    display: none;
+  }
+  #userCardDesk {
+    display: unset;
+  }
+  #userCard {
+    width: 30vw;
+    height: 25vw;
+    background: rgba(243, 243, 243, 0.8);
+    padding: 10%;
+    h4 {
+      font-size: 25px;
+    }
+  }
+
+  .userCard1 {
+    z-index: 3;
+    margin: 10% -10% auto auto;
+  }
+  .userCard2 {
+    z-index: 4;
+    margin: auto auto 10% -5%;
+  }
+  .userCard3 {
+    z-index: 2;
+    margin: 5% -10% auto auto;
+  }
+  .userCard4 {
+    z-index: 1;
+    margin: -5% auto auto -5%;
+  }
+  #docCardsMobil {
+    display: none;
+  }
+  #docCardsDesk {
+    display: unset;
+  }
+  #docCard {
+    width: unset;
+    padding: 10%;
+    height: 300px;
+  }
+  #docImgCard {
+    width: unset;
+    margin-top: unset;
+    height: 650px;
+    min-width: 350px;
+  }
+  .botImgDoc {
+    margin-top: -350px !important;
+  }
 }
 @media (min-width: 1904px) {
   .valaInf {
@@ -636,6 +839,9 @@ export default {};
     h4 {
       font-size: 21px;
     }
+  }
+  #userCard {
+    width: 40vw;
   }
 }
 @media (min-width: 2172px) {
