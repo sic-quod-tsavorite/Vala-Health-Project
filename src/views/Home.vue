@@ -3,7 +3,7 @@
     <v-img id="banner" src="../assets/fpBanner.png" height="30vw" width="100vw">
       <h1>Affordable, private online mental health support</h1>
       <v-row justify="center"
-        ><v-btn outlined rounded color="white" x-large id="bannerBtn"
+        ><v-btn depressed outlined rounded color="white" x-large id="bannerBtn"
           >Book now</v-btn
         ></v-row
       >
@@ -762,6 +762,10 @@ export default {};
     }
     #valaInfBtn {
       margin-bottom: 10%;
+    }
+    #valaInfB {
+      background: rgba(9, 205, 230, 0.8);
+      padding: 5%;
     }
   }
 
