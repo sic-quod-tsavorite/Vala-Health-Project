@@ -1,11 +1,6 @@
 <template>
   <v-app id="body">
-    <v-img
-      id="banner"
-      src="https://cdn.discordapp.com/attachments/702469113825460295/712642781524262952/unknown.png"
-      height="30vw"
-      width="100vw"
-    >
+    <v-img id="banner" src="../assets/fpBanner.png" height="30vw" width="100vw">
       <h1>Affordable, private online mental health support</h1>
       <v-row justify="center"
         ><v-btn outlined rounded color="white" x-large id="bannerBtn"
@@ -27,7 +22,7 @@
           <v-card
             id="mentalHealth"
             class="mentalCard2"
-            img="https://valahealth.com/img/aspects-counselling-2.jpg"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/aspects-counselling-2.jpg?alt=media&token=65c58f2c-8bc5-4d4b-96ef-d8b8e0dc142e"
             ><h2 class="wh2">Relationships</h2>
             <h3 id="hovTxt" class="wh2">
               place holder text
@@ -46,7 +41,7 @@
           <v-card
             id="mentalHealth"
             class="mentalCard4"
-            img="https://valahealth.com/img/aspects-counselling-4.jpg"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/aspects-counselling-4.jpg?alt=media&token=1050752f-83ad-4a9e-9442-e538eaa91188"
             ><h2 class="wh2">Anxiety</h2>
             <h3 id="hovTxt" class="wh2">
               place holder text
@@ -59,7 +54,7 @@
           <v-card
             id="mentalHealth"
             class="mentalCard5"
-            img="https://valahealth.com/img/aspects-counselling-1.jpg"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/aspects-counselling-1.jpg?alt=media&token=478c59a2-f0f8-4d6d-93fb-3bc0c0b88c34"
             ><h2 class="wh2">Self-Esteem</h2>
             <h3 id="hovTxt" class="wh2">
               place holder text
@@ -78,7 +73,7 @@
           <v-card
             id="mentalHealth"
             class="mentalCard7"
-            img="https://valahealth.com/img/aspects-counselling-3.jpg"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/aspects-counselling-3.jpg?alt=media&token=dd969afc-93fb-4b7d-8333-8b7e2c02da9c"
             ><h2 class="wh2">Grief</h2>
             <h3 id="hovTxt" class="wh2">
               place holder text
@@ -96,7 +91,7 @@
           <v-card
             class="valaInf"
             id="valaInfWhiteTxt"
-            img="https://cdn.discordapp.com/attachments/702469113825460295/712651293222633482/unknown.png"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/valaInfImg.png?alt=media&token=1d8003b7-ba23-4676-ad0d-02f0dce4c350"
           >
             <div>
               <h1>Welcome to Vala</h1>
@@ -152,7 +147,7 @@
         <v-col cols="auto">
           <v-card
             class="valaInf"
-            img="https://cdn.discordapp.com/attachments/702469113825460295/712651293222633482/unknown.png"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/valaInfImg.png?alt=media&token=1d8003b7-ba23-4676-ad0d-02f0dce4c350"
           ></v-card>
         </v-col>
         <v-col cols="auto">
@@ -186,7 +181,7 @@
       <v-row justify="center">
         <v-col cols="auto">
           <v-card
-            img="https://cdn.discordapp.com/attachments/294221981455220737/713295076364648458/unknown.png"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/userCardImg1.png?alt=media&token=27682b9d-a79b-48ec-95a7-4f499046d094"
             id="userCard"
             class="userCard1"
             ><div>
@@ -203,7 +198,7 @@
           <v-card
             id="userCard"
             class="userCard4"
-            img="https://cdn.discordapp.com/attachments/702469113825460295/712619777298006026/unknown.png"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/userCardImg2.png?alt=media&token=31dc0b41-d04a-4ddd-b674-fdb39f58c10e"
             ><div>
               <h4>
                 “Since I have started using Vala, I feel happier, less stressed
@@ -219,7 +214,7 @@
       <v-row justify="center">
         <v-col cols="auto">
           <v-card
-            img="https://cdn.discordapp.com/attachments/294221981455220737/713295076364648458/unknown.png"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/userCardImg1.png?alt=media&token=27682b9d-a79b-48ec-95a7-4f499046d094"
             id="userCard"
             class="userCard1"
           ></v-card>
@@ -245,7 +240,7 @@
           <v-card
             id="userCard"
             class="userCard4"
-            img="https://cdn.discordapp.com/attachments/702469113825460295/712619777298006026/unknown.png"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/userCardImg2.png?alt=media&token=31dc0b41-d04a-4ddd-b674-fdb39f58c10e"
           ></v-card>
         </v-col>
       </v-row>
@@ -266,11 +261,12 @@
             </v-card>
           </v-col>
           <v-col>
-            <v-card
-              id="docImgCard"
-              class="botImgDoc"
-              img="https://cdn.discordapp.com/attachments/294221981455220737/713324716743589918/unknown.png"
-            ></v-card>
+            <v-card id="docImgCard" class="botImgDoc">
+              <v-img
+                src="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/docImg1.png?alt=media&token=7d0eff92-15e2-444e-ba6d-daede9fdf553"
+                position="center top"
+              ></v-img>
+            </v-card>
           </v-col>
         </v-row>
         <v-row id="docCardRow">
@@ -287,10 +283,12 @@
             </v-card>
           </v-col>
           <v-col>
-            <v-card
-              id="docImgCard"
-              img="https://cdn.discordapp.com/attachments/294221981455220737/713324101028151367/unknown.png"
-            ></v-card>
+            <v-card id="docImgCard">
+              <v-img
+                src="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/docImg2.png?alt=media&token=8ba61884-8a26-4390-ac58-a41c8a449492"
+                position="center top"
+              ></v-img>
+            </v-card>
           </v-col>
         </v-row>
         <v-row id="docCardRow" justify="center">
@@ -307,11 +305,12 @@
             </v-card>
           </v-col>
           <v-col cols="auto">
-            <v-card
-              id="docImgCard"
-              class="botImgDoc"
-              img="https://cdn.discordapp.com/attachments/294221981455220737/713325151495913472/unknown.png"
-            ></v-card>
+            <v-card id="docImgCard" class="botImgDoc">
+              <v-img
+                src="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/docImg3.png?alt=media&token=9ef77dee-464e-4eb7-b949-d479c1ed87a3"
+                position="center top"
+              ></v-img>
+            </v-card>
           </v-col>
         </v-row>
       </v-row>
@@ -333,7 +332,7 @@
         <v-col>
           <v-card
             id="docImgCard"
-            img="https://cdn.discordapp.com/attachments/294221981455220737/713324101028151367/unknown.png"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/docImg2.png?alt=media&token=8ba61884-8a26-4390-ac58-a41c8a449492"
           ></v-card>
         </v-col>
         <v-col>
@@ -354,7 +353,7 @@
           <v-card
             id="docImgCard"
             class="botImgDoc"
-            img="https://cdn.discordapp.com/attachments/294221981455220737/713324716743589918/unknown.png"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/docImg1.png?alt=media&token=7d0eff92-15e2-444e-ba6d-daede9fdf553"
           ></v-card>
         </v-col>
         <v-col>
@@ -373,7 +372,7 @@
           <v-card
             id="docImgCard"
             class="botImgDoc"
-            img="https://cdn.discordapp.com/attachments/294221981455220737/713325151495913472/unknown.png"
+            img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/docImg3.png?alt=media&token=9ef77dee-464e-4eb7-b949-d479c1ed87a3"
           ></v-card>
         </v-col>
       </v-row>
@@ -391,34 +390,19 @@
         <h1>Vala is rated excellent on Trustpilot:</h1>
         <v-row justify="center">
           <v-col cols="auto">
-            <v-img
-              id="tpImg"
-              src="https://valahealth.com/img/trustpilot_1.svg"
-            ></v-img>
+            <v-img id="tpImg" src="../assets/trustpilot_1.svg"></v-img>
           </v-col>
           <v-col cols="auto">
-            <v-img
-              id="tpImg"
-              src="https://valahealth.com/img/trustpilot_1.svg"
-            ></v-img>
+            <v-img id="tpImg" src="../assets/trustpilot_1.svg"></v-img>
           </v-col>
           <v-col cols="auto">
-            <v-img
-              id="tpImg"
-              src="https://valahealth.com/img/trustpilot_1.svg"
-            ></v-img>
+            <v-img id="tpImg" src="../assets/trustpilot_1.svg"></v-img>
           </v-col>
           <v-col cols="auto">
-            <v-img
-              id="tpImg"
-              src="https://valahealth.com/img/trustpilot_1.svg"
-            ></v-img>
+            <v-img id="tpImg" src="../assets/trustpilot_1.svg"></v-img>
           </v-col>
           <v-col cols="auto">
-            <v-img
-              id="tpImg"
-              src="https://valahealth.com/img/trustpilot_3.svg"
-            ></v-img>
+            <v-img id="tpImg" src="../assets/trustpilot_3.svg"></v-img>
           </v-col>
         </v-row>
       </v-container>
@@ -549,6 +533,7 @@ export default {};
 #userCard {
   width: 100vw;
   height: 40vh;
+  min-height: calc(100vw / 2.5);
   text-align: center;
   display: flex;
   align-items: center;
@@ -572,11 +557,14 @@ export default {};
   padding: 10%;
   height: 30vh;
   width: 100vw;
+  min-height: calc(100vw / 3);
   margin-top: 10%;
 }
 #docImgCard {
   height: 50vh;
+  min-height: calc(100vw / 1.5);
   width: 100vw;
+  contain: content;
 }
 
 #book {
@@ -724,10 +712,12 @@ export default {};
     height: 30vh;
     width: 45vw;
     margin-top: 0;
+    min-height: unset;
   }
   #docImgCard {
     height: 50vh;
     width: 45vw;
+    min-height: unset;
   }
   #trustpilot {
     #trustCont {
@@ -784,10 +774,11 @@ export default {};
   #userCard {
     width: 30vw;
     height: 25vw;
+    min-height: unset;
     background: rgba(243, 243, 243, 0.8);
     padding: 10%;
     h4 {
-      font-size: 25px;
+      font-size: 24px;
     }
   }
 
