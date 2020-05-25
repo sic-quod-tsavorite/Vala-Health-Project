@@ -8,10 +8,11 @@
         </router-link>
       </div>
       <v-spacer></v-spacer>
-
-      <v-btn id="loginbtn">
-        <router-link class="routerLink" to="/">Logout</router-link>
-      </v-btn>
+      <router-link class="routerLink" to="/">
+        <v-btn id="loginbtn">
+          Logout
+        </v-btn></router-link
+      >
     </v-app-bar>
     <v-row justify="center">
       <v-card id="wbg">
