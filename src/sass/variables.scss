@@ -10,7 +10,7 @@ $colorz: (
   secondary: #0077a4,
   dni: #d9d9d9,
   tertiary: #fff1f1,
-  dg: #999,
+  darkg: #999,
   green: #2bfc83,
   lightgrey: #cacaca,
   red: rgb(172, 1, 1),
@@ -31,7 +31,7 @@ $colorz: (
 }
 // til lineargradients
 @mixin bgiColor($colorbgi) {
-  background-image: $colorbgi;
+  background: $colorbgi;
 }
 
 @mixin Imgbox($img) {
