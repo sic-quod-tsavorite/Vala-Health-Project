@@ -38,10 +38,10 @@
             <router-link class="routerLink" to="/mypage">
               <v-btn id="loginBtn" depressed>Login</v-btn>
             </router-link>
-            <router-link class="routerLink" to="/"
-              ><v-btn id="cancelBtn" depressed>Cancel</v-btn></router-link
-            ></v-row
-          >
+            <router-link class="routerLink" to="/">
+              <v-btn id="cancelBtn" depressed>Cancel</v-btn>
+            </router-link>
+          </v-row>
         </v-col>
       </v-card-subtitle>
     </v-card>
@@ -138,23 +138,25 @@ export default {
     #cancelBtn {
       border-radius: 100px;
       margin-top: 6px;
+      border: 2px solid gray;
+      text-transform: capitalize;
     }
-    #loginBtn:hover {
-      transition: all 0.2s ease;
-      border-color: #48a0f7;
-      color: white;
-      @include txtColor(map-get($colorz, white));
-      background-image: linear-gradient(
-        -120deg,
-        #4ceae7,
-        #23bcd6 50%,
-        #0298c8 95%,
-        #0298c8
-      );
+    .routerLink {
+      text-decoration: none;
+      #loginBtn:hover {
+        transition: all 0.2s ease;
+        border-color: #48a0f7;
+        color: white;
+        @include txtColor(map-get($colorz, white));
+        background-image: linear-gradient(
+          -120deg,
+          #4ceae7,
+          #23bcd6 50%,
+          #0298c8 95%,
+          #0298c8
+        );
+      }
     }
-  }
-  .routerLink {
-    text-decoration: none;
   }
 }
 
@@ -205,8 +207,8 @@ export default {
     width: 38%;
     margin: auto;
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     #logtitle {
       text-align: center;
@@ -227,23 +229,25 @@ export default {
     #cancelBtn {
       border-radius: 100px;
       margin-top: 6px;
+      border: 2px solid gray;
+      text-transform: capitalize;
     }
-    #loginBtn:hover {
-      transition: all 0.2s ease;
-      border-color: #48a0f7;
-      color: white;
-      @include txtColor(map-get($colorz, white));
-      background-image: linear-gradient(
-        -120deg,
-        #4ceae7,
-        #23bcd6 50%,
-        #0298c8 95%,
-        #0298c8
-      );
+    .routerLink {
+      text-decoration: none;
+      #loginBtn:hover {
+        transition: all 0.2s ease;
+        border-color: #48a0f7;
+        color: white;
+        @include txtColor(map-get($colorz, white));
+        background-image: linear-gradient(
+          -120deg,
+          #4ceae7,
+          #23bcd6 50%,
+          #0298c8 95%,
+          #0298c8
+        );
+      }
     }
-  }
-  .routerLink {
-    text-decoration: none;
   }
 }
 @media (max-width: 1024px) {
@@ -301,7 +305,7 @@ export default {
       border-radius: 100px;
       color: #48a0f7;
       border: 2px solid;
-      font-size: 15px;
+      font-size: 1em;
       padding: 9px 25px;
       text-transform: capitalize;
       margin-top: 24px;
@@ -309,6 +313,8 @@ export default {
     #cancelBtn {
       border-radius: 100px;
       margin-top: 24px;
+      border: 2px solid gray;
+      text-transform: capitalize;
     }
   }
 }
