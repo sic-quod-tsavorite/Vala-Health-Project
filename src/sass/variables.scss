@@ -20,6 +20,7 @@ $colorz: (
   lg1: linear-gradient(180deg, #0198c8 0, #027fb6 50%, #015f9f 65%, #024d93),
   lg2: linear-gradient(-120deg, #4ceae7, #23bcd6 30%, #0298c8 45%, #0298c8),
   lg3: linear-gradient(0, #0298c8 14%, #4cebe7 48%, #0198c8 83%),
+  lg4: linear-gradient(0, #0198c8 83%, #4cebe7 48%, #4cebe7 48%, #0198c8 83%),
 );
 
 @mixin txtColor($color) {

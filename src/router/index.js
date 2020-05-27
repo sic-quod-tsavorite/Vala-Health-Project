@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Login from "../components/Login.vue";
 import Mypage from "../components/Mypage.vue";
-import Survey from "../components/Survey.vue";
+import Selftest from "../components/Selftest.vue";
 import Booking from "../components/Booking.vue";
 import BookingInfo from "../components/BookingInfo.vue";
 import Msg from "../components/Msg.vue";
@@ -29,9 +29,9 @@ const routes = [
     component: Mypage,
   },
   {
-    path: "/survey",
-    name: "survey",
-    component: Survey,
+    path: "/selftest",
+    name: "selftest",
+    component: Selftest,
   },
   {
     path: "/booking",
