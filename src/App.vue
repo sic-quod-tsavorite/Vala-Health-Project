@@ -1,23 +1,22 @@
 <template>
   <v-app>
     <v-app-bar class="header" color="white" app flat>
-      <v-spacer></v-spacer>
-      <div class="d-flex-shrink-1">
+      <div id="nav-left"></div>
+      <div id="nav-center">
         <router-link class="routerLink" to="/">
           <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
         </router-link>
       </div>
-      <v-spacer></v-spacer>
-      <router-link class="routerLink" to="/login">
-        <v-btn id="loginbtn" depressed>
-          Login
-        </v-btn>
-      </router-link>
+      <div id="nav-right">
+        <router-link class="routerLink" to="/login">
+          <v-btn id="loginbtn" depressed>
+            Login
+          </v-btn>
+        </router-link>
+      </div>
     </v-app-bar>
 
-    <v-content>
-      <router-view />
-    </v-content>
+    <router-view />
 
     <v-footer class="fot" id="foot">
       <v-spacer></v-spacer>
@@ -36,6 +35,24 @@ export default {};
 <style lang="scss">
 * {
   font-family: 'Raleway', sans-serif;
+}
+
+#nav-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#nav-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#nav-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -79,33 +96,6 @@ export default {};
       #0298c8
     );
   }
-
-  /*#aboutbtn {
-    margin-left: 0.3em;
-    @include Txtbtn(Raleway);
-    font-weight: 500;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 100px;
-    color: #999;
-    border: 2px solid #aaa;
-    font-size: 15px;
-    padding: 9px 25px;
-    text-transform: capitalize;
-    .routerLink {
-      text-decoration: none;
-    }
-  }
-
-  #aboutbtn:hover {
-    transition: all 0.2s ease;
-    border-color: #999;
-    color: #fff;
-    @include bgColor(map-get($colorz, dg));
-    .routerLink {
-      color: white;
-    }
-  }*/
 }
 
 @media (max-width: 1024px) {

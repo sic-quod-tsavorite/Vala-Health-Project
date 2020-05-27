@@ -2,11 +2,13 @@
   <v-app id="body">
     <v-img id="banner" src="../assets/fpBanner.png" height="30vw" width="100vw">
       <h1>Affordable, private online mental health support</h1>
-      <v-row justify="center"
-        ><v-btn depressed outlined rounded color="white" x-large id="bannerBtn"
-          >Book now</v-btn
-        ></v-row
-      >
+      <v-row justify="center">
+        <router-link class="routerLink" to="/login">
+          <v-btn depressed outlined rounded color="white" x-large id="bannerBtn"
+            >Book now</v-btn
+          >
+        </router-link>
+      </v-row>
     </v-img>
     <v-container>
       <v-row>
@@ -100,7 +102,9 @@
                 health and social care appointments from home or wherever is
                 convenient.
               </h3>
-              <v-btn outlined rounded large>About Us</v-btn>
+              <router-link class="routerLink" to="#">
+                <v-btn outlined rounded large>About Us</v-btn>
+              </router-link>
             </div>
           </v-card>
         </v-col>
@@ -114,19 +118,23 @@
               can find the right doctor for with our detailed personas. If you
               don’t feel comfortable finding one yourself we have also made it
               possible to run a survey. Through the survey you will find the
-              doctor just right for you
+              doctor just right for you.
             </h4>
           </v-card>
         </v-col>
         <v-col cols="auto">
           <v-card class="valaInf" id="valaInfW">
             <h2>Ready to speak to Vala?</h2>
-            <v-btn outlined rounded large id="valaInfBtn">Book Now</v-btn>
+            <router-link class="routerLink" to="/login">
+              <v-btn outlined rounded large id="valaInfBtn">Book Now</v-btn>
+            </router-link>
             <h3 id="valaH3noM">
               Before booking can you run a survey and find the doctor that is
               just right for you!
             </h3>
-            <v-btn outlined rounded large id="valaInfBtn">Run Survey</v-btn>
+            <router-link class="routerLink" to="/login">
+              <v-btn outlined rounded large id="valaInfBtn">Run Survey</v-btn>
+            </router-link>
           </v-card>
         </v-col>
       </v-row>
@@ -141,7 +149,9 @@
               health and social care appointments from home or wherever is
               convenient.
             </h3>
-            <v-btn outlined rounded large>About Us</v-btn>
+            <router-link class="routerLink" to="#">
+              <v-btn outlined rounded large>About Us</v-btn>
+            </router-link>
           </v-card>
         </v-col>
         <v-col cols="auto">
@@ -160,19 +170,23 @@
               can find the right doctor for with our detailed personas. If you
               don’t feel comfortable finding one yourself we have also made it
               possible to run a survey. Through the survey you will find the
-              doctor just right for you
+              doctor just right for you.
             </h4>
           </v-card>
         </v-col>
         <v-col cols="auto">
           <v-card class="valaInf" id="valaInfW">
             <h2>Ready to speak to Vala?</h2>
-            <v-btn outlined rounded large id="valaInfBtn">Book Now</v-btn>
+            <router-link class="routerLink" to="/login">
+              <v-btn outlined rounded large id="valaInfBtn">Book Now</v-btn>
+            </router-link>
             <h2>
               Before booking can you run a survey and find the doctor that is
               just right for you!
             </h2>
-            <v-btn outlined rounded large id="valaInfBtn">Run Survey</v-btn>
+            <router-link class="routerLink" to="/login">
+              <v-btn outlined rounded large id="valaInfBtn">Run Survey</v-btn>
+            </router-link>
           </v-card>
         </v-col>
       </v-row>
@@ -262,10 +276,7 @@
           </v-col>
           <v-col>
             <v-card id="docImgCard" class="botImgDoc">
-              <v-img
-                src="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/docImg1.png?alt=media&token=7d0eff92-15e2-444e-ba6d-daede9fdf553"
-                position="center top"
-              ></v-img>
+              <v-img src="../assets/docImg1.png" position="center top"></v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -284,10 +295,7 @@
           </v-col>
           <v-col>
             <v-card id="docImgCard">
-              <v-img
-                src="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/docImg2.png?alt=media&token=8ba61884-8a26-4390-ac58-a41c8a449492"
-                position="center top"
-              ></v-img>
+              <v-img src="../assets/docImg2.png" position="center top"></v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -306,10 +314,7 @@
           </v-col>
           <v-col cols="auto">
             <v-card id="docImgCard" class="botImgDoc">
-              <v-img
-                src="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/docImg3.png?alt=media&token=9ef77dee-464e-4eb7-b949-d479c1ed87a3"
-                position="center top"
-              ></v-img>
+              <v-img src="../assets/docImg3.png" position="center top"></v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -381,9 +386,11 @@
       <h1>
         Ready to speak to Vala?
       </h1>
-      <v-btn outlined rounded large width="200px" color="white" id="bookBtn"
-        >Book</v-btn
-      >
+      <router-link class="routerLink" to="/login">
+        <v-btn outlined rounded large width="200px" color="white" id="bookBtn"
+          >Book</v-btn
+        >
+      </router-link>
     </v-container>
     <div id="trustpilot">
       <v-container id="trustCont">
@@ -418,6 +425,7 @@ export default {};
 #body {
   min-height: 100vh;
   background: linear-gradient(0, #0298c8 14%, #4cebe7 48%, #0198c8 83%);
+  overflow-x: hidden;
 }
 
 #banner {
@@ -425,6 +433,7 @@ export default {};
   h1 {
     text-align: center;
     color: white;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
     margin-top: -5%;
     font-family: walkway-black;
     transform: scale(0.5);
@@ -432,6 +441,7 @@ export default {};
   #bannerBtn {
     margin-top: -5%;
     transform: scale(0.75);
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -446,6 +456,7 @@ export default {};
   }
   .wh2 {
     color: white;
+    text-shadow: 0 0 20px black;
   }
   #hovTxt {
     text-align: center;
@@ -840,6 +851,9 @@ export default {};
   }
 }
 @media (min-width: 2172px) {
+  #banner {
+    max-height: 600px;
+  }
   .valaInf {
     width: 30vw;
     height: 25vw;
