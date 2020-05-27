@@ -47,7 +47,6 @@ export default {};
   #tbg {
     @include bgiColor(map-get($colorz, lg3));
     height: 60vh;
-    overflow: hidden;
   }
   #tcard {
     width: 60vw;
@@ -70,6 +69,7 @@ export default {};
   #tRow {
     display: flex;
     margin: auto;
+    margin-bottom: 0;
     #tReturn {
       font-weight: 500;
       font-size: 1.2em;
