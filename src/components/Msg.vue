@@ -212,7 +212,7 @@ export default {
   }
   #chatCard {
     contain: content;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   #youMsg,
   #docMsg {

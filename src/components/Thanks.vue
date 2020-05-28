@@ -28,6 +28,15 @@ export default {};
   font-family: 'Raleway', sans-serif;
 }
 
+#tbg {
+  min-height: fit-content;
+}
+
+#tcard {
+  contain: content;
+  min-height: fit-content;
+}
+
 @media (min-width: 1025px) {
   #tbg {
     @include bgiColor(map-get($colorz, lg3));
@@ -60,7 +69,7 @@ export default {};
       font-size: 1.2em;
       padding: 9px 25px;
       text-transform: capitalize;
-      margin-top: 50px;
+      margin: 50px auto;
 
       color: white;
       border: 2px solid white;
@@ -112,7 +121,7 @@ export default {};
       font-size: 1.1em;
       padding: 9px 25px;
       text-transform: capitalize;
-      margin-top: 25px;
+      margin: 25px auto;
       color: white;
       border: 2px solid white;
       padding: 9px 25px;

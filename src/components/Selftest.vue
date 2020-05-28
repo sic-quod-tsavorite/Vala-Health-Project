@@ -85,7 +85,7 @@ export default {
 }
 #scard {
   contain: content;
-  overflow-y: auto;
+  min-height: fit-content;
 }
 @media (min-width: 1024px) {
   #sbg {

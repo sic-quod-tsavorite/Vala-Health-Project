@@ -37,6 +37,11 @@ export default {};
   font-family: 'Raleway', sans-serif;
 }
 
+#bicard {
+  contain: content;
+  min-height: fit-content;
+}
+
 @media (min-width: 1025px) {
   #bibg {
     @include bgiColor(map-get($colorz, lg3));
@@ -71,6 +76,7 @@ export default {};
   #brow {
     display: flex;
     margin-top: 50px;
+    margin-bottom: 50px;
     justify-content: space-evenly;
     #bSubmit {
       font-weight: 500;
@@ -141,6 +147,7 @@ export default {};
   #brow {
     display: flex;
     margin-top: 50px;
+    margin-bottom: 50px;
     justify-content: space-evenly;
     #bSubmit {
       font-weight: 500;
@@ -211,6 +218,7 @@ export default {};
   #brow {
     display: flex;
     margin-top: 50px;
+    margin-bottom: 50px;
     justify-content: space-evenly;
     #bSubmit {
       font-weight: 500;
