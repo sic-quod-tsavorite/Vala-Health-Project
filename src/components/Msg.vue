@@ -150,7 +150,9 @@
           <v-row align="center">
             <v-col cols="0"></v-col>
             <v-col cols="5" align="center">
-              <v-btn rounded outlined id="msgCanc" large>Cancel</v-btn>
+              <router-link class="routerLink" to="/mypage">
+                <v-btn rounded outlined id="msgCanc" large>Return</v-btn>
+              </router-link>
             </v-col>
             <v-col cols="5">
               <v-select
@@ -192,6 +194,7 @@ export default {
 #msgBody {
   @include bgiColor(map-get($colorz, lg2));
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #msgGreyBg {

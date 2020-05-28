@@ -291,7 +291,11 @@
           </v-col>
           <v-col>
             <v-card id="docImgCard" class="botImgDoc">
-              <v-img src="../assets/docImg1.png" position="center top"></v-img>
+              <v-img
+                :src="require('../assets/docImg1.png')"
+                aspect-ratio=".9"
+                position="center top"
+              ></v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -310,7 +314,11 @@
           </v-col>
           <v-col>
             <v-card id="docImgCard">
-              <v-img src="../assets/docImg2.png" position="center top"></v-img>
+              <v-img
+                :src="require('../assets/docImg2.png')"
+                aspect-ratio=".9"
+                position="center top"
+              ></v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -329,7 +337,11 @@
           </v-col>
           <v-col cols="auto">
             <v-card id="docImgCard" class="botImgDoc">
-              <v-img src="../assets/docImg3.png" position="center top"></v-img>
+              <v-img
+                :src="require('../assets/docImg3.png')"
+                aspect-ratio=".9"
+                position="center top"
+              ></v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -743,6 +755,7 @@ export default {};
   }
   #docImgCard {
     height: 50vh;
+    max-height: 500px;
     width: 45vw;
     min-height: unset;
   }
@@ -843,6 +856,7 @@ export default {};
   #docImgCard {
     width: unset;
     margin-top: unset;
+    max-height: unset;
     height: 650px;
     min-width: 350px;
   }
