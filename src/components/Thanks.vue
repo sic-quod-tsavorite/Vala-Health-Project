@@ -40,7 +40,7 @@ export default {};
 @media (min-width: 1025px) {
   #tbg {
     @include bgiColor(map-get($colorz, lg3));
-    height: 60vh;
+    height: 80vh;
   }
   #tcard {
     width: 60vw;

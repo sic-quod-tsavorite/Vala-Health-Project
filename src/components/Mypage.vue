@@ -210,24 +210,6 @@ export default {
             letter-spacing: normal !important;
             color: #004172;
           }
-          // #Prescription {
-          //   color: #004172;
-          //   font-weight: 600;
-          //   font-size: 1em;
-          //   padding: 9px 25px;
-          //   text-transform: capitalize;
-
-          //   color: white;
-          //   border: 2px solid white;
-          //   padding: 9px 25px;
-          //   text-transform: capitalize;
-          //   background-image: linear-gradient(
-          //     -120deg,
-          //     #4ceae7,
-          //     #23bcd6 50%,
-          //     #0298c8 95%,
-          //     #0298c8
-          //   );
 
           #Prescription {
             font-weight: 600;
