@@ -444,7 +444,7 @@ export default {};
 }
 
 #banner {
-  margin-bottom: 5%;
+  margin: 50px auto 5% auto;
   h1 {
     text-align: center;
     color: white;
@@ -454,7 +454,7 @@ export default {};
     transform: scale(0.5);
   }
   #bannerBtn {
-    margin-top: -5%;
+    margin-top: -10%;
     transform: scale(0.75);
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
   }
@@ -684,6 +684,7 @@ export default {};
 
 @media (min-width: 960px) {
   #banner {
+    margin: 60px auto 5% auto;
     h1 {
       margin-top: 0;
       transform: scale(1);

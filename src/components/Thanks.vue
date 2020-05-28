@@ -1,20 +1,5 @@
 <template>
   <v-app id="tbg">
-    <v-app-bar class="header" color="white" app flat>
-      <v-spacer></v-spacer>
-      <div class="d-flex-shrink-1">
-        <router-link class="routerLink" to="/">
-          <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
-        </router-link>
-      </div>
-      <v-spacer></v-spacer>
-      <router-link class="routerLink" to="/">
-        <v-btn id="loginbtn">
-          Logout
-        </v-btn></router-link
-      >
-    </v-app-bar>
-
     <v-card id="tcard">
       <p id="t1">
         Thank you for choosing Vala.
@@ -40,7 +25,7 @@ export default {};
 
 <style lang="scss" scoped>
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (min-width: 1025px) {

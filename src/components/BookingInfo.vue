@@ -1,19 +1,5 @@
 <template>
   <v-app id="bibg">
-    <v-app-bar class="header" color="white" app flat>
-      <v-spacer></v-spacer>
-      <div class="d-flex-shrink-1">
-        <router-link class="routerLink" to="/">
-          <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
-        </router-link>
-      </div>
-      <v-spacer></v-spacer>
-      <router-link class="routerLink" to="/">
-        <v-btn id="loginbtn">
-          Logout
-        </v-btn></router-link
-      >
-    </v-app-bar>
     <p id="b1">Book an appointment</p>
     <v-card id="bicard">
       <v-col>
@@ -48,7 +34,7 @@ export default {};
 
 <style lang="scss" scoped>
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (min-width: 1025px) {
@@ -59,7 +45,7 @@ export default {};
   #b1 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 94px;
     font-size: 1.8em;
     font-weight: 800;
   }
@@ -132,7 +118,7 @@ export default {};
   #b1 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 69px;
     font-size: 1.8em;
     font-weight: 800;
   }
@@ -202,7 +188,7 @@ export default {};
   #b1 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 69px;
     font-size: 1.8em;
     font-weight: 800;
   }

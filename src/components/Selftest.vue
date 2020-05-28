@@ -81,7 +81,11 @@ export default {
 
 <style lang="scss" scoped>
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+#scard {
+  contain: content;
+  overflow-y: auto;
 }
 @media (min-width: 1024px) {
   #sbg {
@@ -91,7 +95,7 @@ export default {
   #scard {
     display: flex;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 64px;
     padding-left: 50px;
     width: 60vw;
     height: 90vh;
@@ -149,7 +153,7 @@ export default {
   #scard {
     display: flex;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 48px;
     padding-left: 25px;
     width: 90vw;
     height: 100%;
