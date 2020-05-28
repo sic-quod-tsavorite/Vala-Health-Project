@@ -1,5 +1,20 @@
 <template>
   <v-app id="body">
+    <v-app-bar class="header" color="white" app flat>
+      <div id="nav-left"></div>
+      <div id="nav-center">
+        <router-link class="routerLink" to="/">
+          <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
+        </router-link>
+      </div>
+      <div id="nav-right">
+        <router-link class="routerLink" to="/login">
+          <v-btn id="loginbtn" depressed>
+            Login
+          </v-btn>
+        </router-link>
+      </div>
+    </v-app-bar>
     <v-img id="banner" src="../assets/fpBanner.png" height="30vw" width="100vw">
       <h1>Affordable, private online mental health support</h1>
       <v-row justify="center">
@@ -276,7 +291,11 @@
           </v-col>
           <v-col>
             <v-card id="docImgCard" class="botImgDoc">
-              <v-img src="../assets/docImg1.png" position="center top"></v-img>
+              <v-img
+                :src="require('../assets/docImg1.png')"
+                aspect-ratio=".9"
+                position="center top"
+              ></v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -295,7 +314,11 @@
           </v-col>
           <v-col>
             <v-card id="docImgCard">
-              <v-img src="../assets/docImg2.png" position="center top"></v-img>
+              <v-img
+                :src="require('../assets/docImg2.png')"
+                aspect-ratio=".9"
+                position="center top"
+              ></v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -314,7 +337,11 @@
           </v-col>
           <v-col cols="auto">
             <v-card id="docImgCard" class="botImgDoc">
-              <v-img src="../assets/docImg3.png" position="center top"></v-img>
+              <v-img
+                :src="require('../assets/docImg3.png')"
+                aspect-ratio=".9"
+                position="center top"
+              ></v-img>
             </v-card>
           </v-col>
         </v-row>
@@ -429,7 +456,7 @@ export default {};
 }
 
 #banner {
-  margin-bottom: 5%;
+  margin: 50px auto 5% auto;
   h1 {
     text-align: center;
     color: white;
@@ -439,7 +466,7 @@ export default {};
     transform: scale(0.5);
   }
   #bannerBtn {
-    margin-top: -5%;
+    margin-top: -10%;
     transform: scale(0.75);
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
   }
@@ -669,6 +696,7 @@ export default {};
 
 @media (min-width: 960px) {
   #banner {
+    margin: 60px auto 5% auto;
     h1 {
       margin-top: 0;
       transform: scale(1);
@@ -727,6 +755,7 @@ export default {};
   }
   #docImgCard {
     height: 50vh;
+    max-height: 500px;
     width: 45vw;
     min-height: unset;
   }
@@ -827,6 +856,7 @@ export default {};
   #docImgCard {
     width: unset;
     margin-top: unset;
+    max-height: unset;
     height: 650px;
     min-width: 350px;
   }

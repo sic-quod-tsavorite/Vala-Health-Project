@@ -10,7 +10,7 @@
       <div id="nav-right">
         <router-link class="routerLink" to="/login">
           <v-btn id="loginbtn" depressed>
-            Login
+            Logout
           </v-btn>
         </router-link>
       </div>
