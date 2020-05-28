@@ -19,14 +19,52 @@
     <router-view />
 
     <v-footer class="fot" id="foot">
-      <v-spacer></v-spacer>
-    </v-footer>
+      <v-row>
+        <v-col>
+          <div id="vlogo" flat>
+            <img
+              src="https://valahealth.com/img/vala-logo.svg"
+              width="300"
+              height="100"
+            />
+          </div>
+        </v-col>
+        <v-col>
+          <div id="legal">
+            <b> Legal</b> <br />
+            <br />
+            Prescription policy <br />
+            Registration & regulation <br />
+            Privacy policy <br />
+            Data protection
+          </div>
+        </v-col>
+        <v-col>
+          <div id="regu">
+            <v-row><b>Regulated by</b></v-row>
+
+            <v-row
+              ><img
+                id="fimg1"
+                src="https://valahealth.com/img/social-icons/gmc.svg "
+                width="200"
+                height="50"
+            /></v-row>
+            <v-row
+              ><img
+                id="fimg2"
+                src="https://valahealth.com/img/social-icons/cqc.svg"
+                width="200"
+                height="50"
+            /></v-row>
+          </div> </v-col></v-row
+    ></v-footer>
   </v-app>
 </template>
 
 <script>
-import Vue from 'vue';
-import VueKinesis from 'vue-kinesis';
+import Vue from "vue";
+import VueKinesis from "vue-kinesis";
 
 Vue.use(VueKinesis);
 export default {};
@@ -34,7 +72,7 @@ export default {};
 
 <style lang="scss">
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 #nav-left {
@@ -96,6 +134,37 @@ export default {};
       #0298c8
     );
   }
+
+  .fot {
+    width: 100vw;
+    height: auto;
+  }
+
+  #vlogo {
+    height: auto;
+    margin-top: 8%;
+    margin-left: 20%;
+  }
+  #legal {
+    margin-top: 3%;
+    height: auto;
+    font-size: 0.9em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #regu {
+    margin-top: 3%;
+    height: auto;
+    margin-left: 20%;
+    #fimg1 {
+      margin-top: 5%;
+      margin-right: 90%;
+    }
+    #fimg2 {
+      margin-top: 3%;
+      margin-right: 90%;
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -138,6 +207,33 @@ export default {};
       #0298c8 95%,
       #0298c8
     );
+  }
+  .fot {
+    width: 100vw;
+    height: auto;
+  }
+
+  #vlogo {
+    height: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  #legal {
+    height: auto;
+    font-size: 0.9em;
+    text-align: left;
+    margin-left: 20%;
+  }
+  #regu {
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    #fimg1 {
+      margin-top: 20%;
+    }
+    #fimg2 {
+      margin-top: 10%;
+    }
   }
 }
 </style>
