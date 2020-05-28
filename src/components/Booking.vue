@@ -115,15 +115,15 @@
 <script>
 export default {
   data: () => ({
-    names: ["John Smith", "Jane Smith"],
-    medic: ["Medical Practitioner", "Mentalhealth Specialist "],
+    names: ['John Smith', 'Jane Smith'],
+    medic: ['Medical Practitioner', 'Mentalhealth Specialist '],
   }),
 };
 </script>
 
 <style lang="scss" scoped>
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .routerLink {
   text-decoration: none;
@@ -135,7 +135,7 @@ export default {
     min-height: 100vh;
   }
   #wbg {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
 
@@ -241,12 +241,13 @@ export default {
   #bbg {
     @include bgiColor(map-get($colorz, lg3));
     min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
   }
   #wbg {
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
-
     #topSection {
       border-bottom: 2px solid #cacaca;
       border-style: dashed;
@@ -292,7 +293,7 @@ export default {
         margin: 0 auto;
       }
       #frow {
-        width: 60vw;
+        width: 30vw;
         display: flex;
         justify-content: center;
       }

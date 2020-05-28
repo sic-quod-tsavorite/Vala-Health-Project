@@ -23,7 +23,7 @@
                   self test below, to help you find the fitting help you need.
                   <br />
                   <router-link class="routerLink" to="/Booking"
-                    >Book an appointment</router-link
+                    >Book an appointment </router-link
                   >or
                   <router-link class="routerLink" to="/Selftest"
                     >Find the right Doctor for you.</router-link
