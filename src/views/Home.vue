@@ -1,5 +1,20 @@
 <template>
   <v-app id="body">
+    <v-app-bar class="header" color="white" app flat>
+      <div id="nav-left"></div>
+      <div id="nav-center">
+        <router-link class="routerLink" to="/">
+          <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
+        </router-link>
+      </div>
+      <div id="nav-right">
+        <router-link class="routerLink" to="/login">
+          <v-btn id="loginbtn" depressed>
+            Login
+          </v-btn>
+        </router-link>
+      </div>
+    </v-app-bar>
     <v-img id="banner" src="../assets/fpBanner.png" height="30vw" width="100vw">
       <h1>Affordable, private online mental health support</h1>
       <v-row justify="center">
