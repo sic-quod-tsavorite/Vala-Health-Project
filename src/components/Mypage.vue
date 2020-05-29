@@ -17,17 +17,13 @@
               <v-row>
                 <div id="c1">
                   <router-link class="routerLink" to="/Booking">
-                    <h3>Book an appointment</h3> </router-link
-                  >Here you can book an appointment, find available times,
+                    <h3>Book an appointment</h3>
+                  </router-link>Here you can book an appointment, find available times,
                   pricing plans and contact options. There is also an optional
                   self test below, to help you find the fitting help you need.
                   <br />
-                  <router-link class="routerLink" to="/Booking"
-                    >Book an appointment </router-link
-                  >or
-                  <router-link class="routerLink" to="/Selftest"
-                    >Find the right Doctor for you.</router-link
-                  >
+                  <router-link class="routerLink" to="/Booking">Book an appointment</router-link>or
+                  <router-link class="routerLink" to="/Selftest">Find the right Doctor for you.</router-link>
                 </div>
 
                 <div id="c2">
@@ -40,34 +36,25 @@
                   you have more complicated questions we would advise booking an
                   appointment.
                   <br />
-                  <router-link class="routerLink" to="/Msg"
-                    >E-consultation</router-link
-                  >
+                  <router-link class="routerLink" to="/Msg">E-consultation</router-link>
                 </div>
               </v-row>
               <v-row>
                 <div id="c3">
                   <!-- skal sendes til unread -->
                   <router-link class="routerLink" to="/Msg">
-                    <h3>Replies from the doctor (0)</h3> </router-link
-                  >Here you can read your unread replies from your doctor, sent
+                    <h3>Replies from the doctor (0)</h3>
+                  </router-link>Here you can read your unread replies from your doctor, sent
                   messages, previous and current conversations
                   <br />
-                  <router-link class="routerLink" to="/Msg"
-                    >Replies from the doctor</router-link
-                  >
+                  <router-link class="routerLink" to="/Msg">Replies from the doctor</router-link>
                 </div>
 
                 <div id="c4">
-                  <h3>Renew prescription</h3>
-                  Here you can renew your previous prescriptions
+                  <h3>Renew prescription</h3>Here you can renew your previous prescriptions
                   <br />
 
-                  <v-select
-                    :items="items"
-                    label="Request perscription"
-                    single-line
-                  ></v-select>
+                  <v-select :items="items" label="Request perscription" single-line></v-select>
                   <v-dialog max-width="300px" v-model="dialog">
                     <v-btn
                       v-on:click="succes = !succes"
@@ -76,12 +63,9 @@
                       slot="activator"
                       @click.stop="dialog = true"
                       id="Prescription"
-                      >Submit Request</v-btn
-                    >
+                    >Submit Request</v-btn>
                     <v-card>
-                      <v-card-title class="headline"
-                        >Renewal Requested!</v-card-title
-                      >
+                      <v-card-title class="headline">Renewal Requested!</v-card-title>
                       <br />
                       <v-card-subtitle>
                         A Renewal has been requested, a doctor will send you an
@@ -91,9 +75,7 @@
                       <v-card-actions>
                         <v-spacer></v-spacer>
 
-                        <v-btn color="Blue" text @click="dialog = false"
-                          >Close</v-btn
-                        >
+                        <v-btn color="Blue" text @click="dialog = false">Close</v-btn>
                       </v-card-actions>
                     </v-card>
                   </v-dialog>
@@ -111,8 +93,8 @@
 export default {
   data: () => ({
     items: ["Alprazolam (Xanax)", "Citalopram (Celexa)", "Asenapine (Saphris)"],
-    dialog: false,
-  }),
+    dialog: false
+  })
 };
 </script>
 

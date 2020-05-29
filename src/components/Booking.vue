@@ -25,12 +25,7 @@
             <p id="top3">To see a:</p>
           </v-col>
           <v-col id="col2">
-            <v-select
-              background-color="white"
-              :items="names"
-              label="John Smith"
-              single-line
-            ></v-select>
+            <v-select background-color="white" :items="names" label="John Smith" single-line></v-select>
             <v-select
               background-color="white"
               :items="medic"
@@ -38,36 +33,26 @@
               single-line
             ></v-select>
           </v-col>
-        </v-row> </v-card
-      >Available appointments
-
+        </v-row>
+      </v-card>
+Available appointments
       <v-card id="appo" flat>
         <v-col>
           <p id="dayheader">Monday 18th of May 2020</p>
 
           <v-btn-toggle v-model="text" tile group>
-            <v-col
-              ><v-row id="frow">
-                <v-btn depressed class="timebtn">
-                  11:00
-                </v-btn>
-                <v-btn depressed id="tr" class="timebtn">
-                  11:30
-                </v-btn>
-                <v-btn depressed class="timebtn">
-                  12:00
-                </v-btn></v-row
-              >
+            <v-col>
               <v-row id="frow">
-                <v-btn depressed class="timebtn">
-                  12:30
-                </v-btn>
-                <v-btn depressed id="tr" class="timebtn">
-                  13:00
-                </v-btn>
-                <v-btn depressed class="timebtn"> 13:30 </v-btn>
-              </v-row></v-col
-            >
+                <v-btn depressed class="timebtn">11:00</v-btn>
+                <v-btn depressed id="tr" class="timebtn">11:30</v-btn>
+                <v-btn depressed class="timebtn">12:00</v-btn>
+              </v-row>
+              <v-row id="frow">
+                <v-btn depressed class="timebtn">12:30</v-btn>
+                <v-btn depressed id="tr" class="timebtn">13:00</v-btn>
+                <v-btn depressed class="timebtn">13:30</v-btn>
+              </v-row>
+            </v-col>
           </v-btn-toggle>
         </v-col>
       </v-card>
@@ -90,21 +75,21 @@
 
         <v-btn-toggle v-model="text" tile color="white" width="auto">
           <v-row id="brow">
-            <v-btn depressed id="po" class="brow"
-              >Single Payment <br />
-              £44.99</v-btn
-            ><v-btn depressed id="po" class="brow"
-              >Subscription <br />
-
-              From £15.00/pm</v-btn
-            ></v-row
-          ></v-btn-toggle
-        >
+            <v-btn depressed id="po" class="brow">
+              Single Payment
+              <br />£44.99
+            </v-btn>
+            <v-btn depressed id="po" class="brow">
+              Subscription
+              <br />From £15.00/pm
+            </v-btn>
+          </v-row>
+        </v-btn-toggle>
         <v-col>
           <v-row>
-            <v-btn id="bbtn" depressed href="/Thanks"> Book </v-btn>
+            <v-btn id="bbtn" depressed href="/Thanks">Book</v-btn>
 
-            <v-btn id="bbtn" depressed href="/Mypage"> Cancel </v-btn>
+            <v-btn id="bbtn" depressed href="/Mypage">Cancel</v-btn>
           </v-row>
         </v-col>
       </v-card>
@@ -116,8 +101,8 @@
 export default {
   data: () => ({
     names: ["John Smith", "Jane Smith"],
-    medic: ["Medical Practitioner", "Mentalhealth Specialist "],
-  }),
+    medic: ["Medical Practitioner", "Mentalhealth Specialist "]
+  })
 };
 </script>
 
@@ -135,7 +120,7 @@ export default {
     min-height: 100vh;
   }
   #wbg {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
 
@@ -241,12 +226,13 @@ export default {
   #bbg {
     @include bgiColor(map-get($colorz, lg3));
     min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
   }
   #wbg {
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
-
     #topSection {
       border-bottom: 2px solid #cacaca;
       border-style: dashed;
@@ -291,7 +277,6 @@ export default {
       }
       #frow {
         width: 30vw;
-
         display: flex;
         justify-content: center;
       }

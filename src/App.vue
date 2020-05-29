@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="outerBody">
     <v-app-bar class="header" color="white" app flat>
       <div id="nav-left"></div>
       <div id="nav-center">
@@ -63,8 +63,8 @@
 </template>
 
 <script>
-import Vue from "vue";
-import VueKinesis from "vue-kinesis";
+import Vue from 'vue';
+import VueKinesis from 'vue-kinesis';
 
 Vue.use(VueKinesis);
 export default {};
@@ -72,7 +72,7 @@ export default {};
 
 <style lang="scss">
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 #nav-left {
@@ -168,6 +168,9 @@ export default {};
 }
 
 @media (max-width: 1024px) {
+  #outerBody {
+    overflow-x: hidden;
+  }
   .header {
     z-index: 1000;
     background-color: white;
