@@ -281,9 +281,7 @@ export default {
       margin-top: 3%;
       font-weight: bold;
       font-size: 1.2em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
       border-bottom: 2px solid #cacaca;
       border-style: none none dashed none;
 
@@ -292,7 +290,8 @@ export default {
         margin: 0 auto;
       }
       #frow {
-        width: 60vw;
+        width: 30vw;
+
         display: flex;
         justify-content: center;
       }
