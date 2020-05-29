@@ -31,7 +31,8 @@
           <v-card id="mentalHealth" class="mentalCard1"
             ><h2>Depression</h2>
             <h3 id="hovTxt">
-              place holder text
+              Like the worst day of your life, every single day. It feels like
+              everything’s falling apart and worthless.
             </h3></v-card
           >
         </v-col>
@@ -42,7 +43,8 @@
             img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/aspects-counselling-2.jpg?alt=media&token=65c58f2c-8bc5-4d4b-96ef-d8b8e0dc142e"
             ><h2 class="wh2">Relationships</h2>
             <h3 id="hovTxt" class="wh2">
-              place holder text
+              Not feeling a good conection to your friends or family. Not sure
+              people is as dependent of you as you are of them.
             </h3></v-card
           >
         </v-col>
@@ -50,7 +52,8 @@
           <v-card id="mentalHealth" class="mentalCard3"
             ><h2>Stress</h2>
             <h3 id="hovTxt">
-              place holder text
+              Don't know what to do with yourself in some situations. Can't
+              always control your physical, mental and emotional responses.
             </h3></v-card
           >
         </v-col>
@@ -61,7 +64,8 @@
             img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/aspects-counselling-4.jpg?alt=media&token=1050752f-83ad-4a9e-9442-e538eaa91188"
             ><h2 class="wh2">Anxiety</h2>
             <h3 id="hovTxt" class="wh2">
-              place holder text
+              Feeling worried, fear or just uneasiness overall. It can cause
+              both mental and physical pain.
             </h3></v-card
           >
         </v-col>
@@ -74,7 +78,8 @@
             img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/aspects-counselling-1.jpg?alt=media&token=478c59a2-f0f8-4d6d-93fb-3bc0c0b88c34"
             ><h2 class="wh2">Self-Esteem</h2>
             <h3 id="hovTxt" class="wh2">
-              place holder text
+              Lack of condifence and feeling poorly about oneself. Can often be
+              feeling unloveable, awkward and rejectied.
             </h3></v-card
           >
         </v-col>
@@ -82,7 +87,9 @@
           <v-card id="mentalHealth" class="mentalCard6"
             ><h2>Addiction</h2>
             <h3 id="hovTxt">
-              place holder text
+              Does your body or mind badly need something in order for you to
+              feel like your working properly? It can be drugs, cigarettes,
+              alcohol or caffeine just to name a few.
             </h3></v-card
           >
         </v-col>
@@ -93,7 +100,8 @@
             img="https://firebasestorage.googleapis.com/v0/b/valahealth-project.appspot.com/o/aspects-counselling-3.jpg?alt=media&token=dd969afc-93fb-4b7d-8333-8b7e2c02da9c"
             ><h2 class="wh2">Grief</h2>
             <h3 id="hovTxt" class="wh2">
-              place holder text
+              Can it often feel like your looking through a one way window, you
+              don't feel like other people sees you even though you see them.
             </h3></v-card
           >
         </v-col>
@@ -279,14 +287,16 @@
         <v-row id="docCardRow">
           <v-col>
             <v-card id="docCard">
-              <h1>Susan</h1>
-              <h3>Specialties</h3>
-              <ul>
-                <li>Stress, Anxiety</li>
-                <li>Self esteem</li>
-                <li>Depression</li>
-              </ul>
-              <h4>Years of experience: 3</h4>
+              <div>
+                <h1>Susan</h1>
+                <h3>Specialties</h3>
+                <ul>
+                  <li>Stress, Anxiety</li>
+                  <li>Self esteem</li>
+                  <li>Depression</li>
+                </ul>
+                <h4>Years of experience: 3</h4>
+              </div>
             </v-card>
           </v-col>
           <v-col>
@@ -302,14 +312,16 @@
         <v-row id="docCardRow">
           <v-col>
             <v-card id="docCard">
-              <h1>Greg</h1>
-              <h3>Specialties</h3>
-              <ul>
-                <li>Addictions</li>
-                <li>Career difficulties</li>
-                <li>Depression</li>
-              </ul>
-              <h4>Years of experience: 6</h4>
+              <div>
+                <h1>Greg</h1>
+                <h3>Specialties</h3>
+                <ul>
+                  <li>Addictions</li>
+                  <li>Career difficulties</li>
+                  <li>Depression</li>
+                </ul>
+                <h4>Years of experience: 6</h4>
+              </div>
             </v-card>
           </v-col>
           <v-col>
@@ -325,14 +337,16 @@
         <v-row id="docCardRow" justify="center">
           <v-col cols="auto">
             <v-card id="docCard">
-              <h1>Judy</h1>
-              <h3>Specialties</h3>
-              <ul>
-                <li>Trauma and abuse</li>
-                <li>Parenting issues</li>
-                <li>Depression</li>
-              </ul>
-              <h4>Years of experience: 8</h4>
+              <div>
+                <h1>Judy</h1>
+                <h3>Specialties</h3>
+                <ul>
+                  <li>Trauma and abuse</li>
+                  <li>Parenting issues</li>
+                  <li>Depression</li>
+                </ul>
+                <h4>Years of experience: 8</h4>
+              </div>
             </v-card>
           </v-col>
           <v-col cols="auto">
@@ -488,6 +502,7 @@ export default {};
   #hovTxt {
     text-align: center;
     opacity: 0;
+    padding: 5%;
   }
 }
 #mentalHealth:hover {
@@ -592,11 +607,15 @@ export default {};
 }
 
 #docCard {
-  padding: 10%;
   height: 30vh;
   width: 100vw;
   min-height: calc(100vw / 3);
   margin-top: 10%;
+  div {
+    height: 100%;
+    margin-left: 5%;
+    @include Flexbox(column);
+  }
 }
 #docImgCard {
   height: 50vh;
@@ -673,6 +692,10 @@ export default {};
   }
   #docCard {
     height: 30vh;
+    div {
+      margin-left: 15%;
+      transform: scale(1.2);
+    }
   }
   #docImgCard {
     height: 65vh;
@@ -752,6 +775,10 @@ export default {};
     width: 45vw;
     margin-top: 0;
     min-height: unset;
+    div {
+      margin-left: 25%;
+      transform: scale(1.4);
+    }
   }
   #docImgCard {
     height: 50vh;
