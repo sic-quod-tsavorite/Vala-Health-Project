@@ -1,19 +1,5 @@
 <template>
   <v-app id="sbg">
-    <v-app-bar class="header" color="white" app flat>
-      <v-spacer></v-spacer>
-      <div class="d-flex-shrink-1">
-        <router-link class="routerLink" to="/">
-          <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
-        </router-link>
-      </div>
-      <v-spacer></v-spacer>
-      <router-link class="routerLink" to="/">
-        <v-btn id="loginbtn" depressed>
-          Logout
-        </v-btn>
-      </router-link>
-    </v-app-bar>
     <v-card id="scard">
       <v-col>
         <v-radio-group v-model="radios" :mandatory="false">
@@ -61,11 +47,11 @@
       </v-col>
     </v-card>
     <v-row id="srow">
-      <router-link class="routerLink" to="/">
+      <a class="routerLink" href="/Mypage">
         <v-btn rounded id="sCancel">Cancel</v-btn>
-      </router-link>
-      <router-link class="routerLink" to="/BookingInfo"
-        ><v-btn rounded id="sSubmit">Next</v-btn></router-link
+      </a>
+      <a class="routerLink" href="/BookingInfo"
+        ><v-btn rounded id="sSubmit">Next</v-btn></a
       >
     </v-row>
   </v-app>

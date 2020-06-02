@@ -35,6 +35,7 @@
               placeholder="Type Here"
               type="text"
               outlined
+              append-icon="mdi-send-circle"
             ></v-text-field>
           </v-tab-item>
           <v-tab-item>
@@ -66,6 +67,7 @@
               type="text"
               outlined
               disabled
+              append-icon="mdi-send-circle"
             ></v-text-field>
           </v-tab-item>
           <v-tab-item>
@@ -113,6 +115,7 @@
               type="text"
               outlined
               disabled
+              append-icon="mdi-send-circle"
             ></v-text-field>
           </v-tab-item>
           <v-tab-item>
@@ -143,6 +146,7 @@
               placeholder="Type Here"
               type="text"
               outlined
+              append-icon="mdi-send-circle"
             ></v-text-field>
           </v-tab-item>
         </v-tabs>
@@ -150,9 +154,9 @@
           <v-row align="center">
             <v-col cols="0"></v-col>
             <v-col cols="5" align="center">
-              <router-link class="routerLink" to="/mypage">
+              <a class="routerLink" href="/mypage">
                 <v-btn rounded outlined id="msgCanc" large>Return</v-btn>
-              </router-link>
+              </a>
             </v-col>
             <v-col cols="5">
               <v-select

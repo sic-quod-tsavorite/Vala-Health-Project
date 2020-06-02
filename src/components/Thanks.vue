@@ -12,9 +12,9 @@
     </v-card>
 
     <v-row id="tRow">
-      <router-link class="routerLink" to="/mypage">
+      <a class="routerLink" href="/mypage">
         <v-btn rounded id="tReturn">Return</v-btn>
-      </router-link></v-row
+      </a></v-row
     >
   </v-app>
 </template>

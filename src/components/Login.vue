@@ -3,9 +3,9 @@
     <v-app-bar class="heada" color="rgba(255, 255, 255, 0.7)" app flat>
       <v-spacer></v-spacer>
       <div class="d-flex-shrink-1">
-        <router-link class="routerLink" to="/">
+        <a class="routerLink" href="/">
           <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
-        </router-link>
+        </a>
       </div>
       <v-spacer></v-spacer>
     </v-app-bar>
@@ -35,12 +35,12 @@
             <a>Forgot Password?</a>
           </v-row>
           <v-row justify="space-around">
-            <router-link class="routerLink" to="/mypage">
+            <a class="routerLink" href="/mypage">
               <v-btn id="loginBtn" depressed>Login</v-btn>
-            </router-link>
-            <router-link class="routerLink" to="/">
+            </a>
+            <a class="routerLink" href="/">
               <v-btn id="cancelBtn" depressed>Cancel</v-btn>
-            </router-link>
+            </a>
           </v-row>
         </v-col>
       </v-card-subtitle>
@@ -56,8 +56,8 @@ export default {
       show1: false,
 
       rules: {
-        required: (value) => !!value || "Required.",
-        min: (v) => v.length >= 8 || "Min 8 characters",
+        required: (value) => !!value || 'Required.',
+        min: (v) => v.length >= 8 || 'Min 8 characters',
         emailMatch: () => "The email and password you entered don't match",
       },
     };
@@ -67,7 +67,7 @@ export default {
 
 <style lang="scss" scoped>
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (min-width: 1300px) {

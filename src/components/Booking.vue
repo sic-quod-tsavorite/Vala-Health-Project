@@ -1,17 +1,5 @@
 <template>
   <v-app id="bbg">
-    <v-app-bar class="header" color="white" app flat>
-      <v-spacer></v-spacer>
-      <div class="d-flex-shrink-1">
-        <router-link class="routerLink" to="/">
-          <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
-        </router-link>
-      </div>
-      <v-spacer></v-spacer>
-      <router-link class="routerLink" to="/">
-        <v-btn id="loginbtn">Logout</v-btn>
-      </router-link>
-    </v-app-bar>
     <v-card id="wbg">
       <v-card id="topSection" flat>
         <p id="top">Book an appointment</p>
@@ -43,32 +31,116 @@
 
       <v-card id="appo" flat>
         <v-col>
-          <p id="dayheader">Monday 18th of May 2020</p>
-
-          <v-btn-toggle v-model="text" tile group>
-            <v-col
-              ><v-row id="frow">
-                <v-btn depressed class="timebtn">
-                  11:00
-                </v-btn>
-                <v-btn depressed id="tr" class="timebtn">
-                  11:30
-                </v-btn>
-                <v-btn depressed class="timebtn">
-                  12:00
-                </v-btn></v-row
-              >
-              <v-row id="frow">
-                <v-btn depressed class="timebtn">
-                  12:30
-                </v-btn>
-                <v-btn depressed id="tr" class="timebtn">
-                  13:00
-                </v-btn>
-                <v-btn depressed class="timebtn"> 13:30 </v-btn>
-              </v-row></v-col
-            >
-          </v-btn-toggle>
+          <v-tabs centered show-arrows>
+            <v-tab>17/5</v-tab>
+            <v-tab>18/5</v-tab>
+            <v-tab>19/5</v-tab>
+            <v-tab>20/5</v-tab>
+            <v-tab-item>
+              <v-btn-toggle v-model="text" tile group>
+                <v-col
+                  ><v-row id="frow">
+                    <v-btn depressed class="timebtn">
+                      11:00
+                    </v-btn>
+                    <v-btn depressed id="tr" class="timebtn" disabled>
+                      11:30
+                    </v-btn>
+                    <v-btn depressed class="timebtn">
+                      12:00
+                    </v-btn></v-row
+                  >
+                  <v-row id="frow">
+                    <v-btn depressed class="timebtn" disabled>
+                      12:30
+                    </v-btn>
+                    <v-btn depressed id="tr" class="timebtn">
+                      13:00
+                    </v-btn>
+                    <v-btn depressed class="timebtn"> 13:30 </v-btn>
+                  </v-row></v-col
+                >
+              </v-btn-toggle>
+            </v-tab-item>
+            <v-tab-item>
+              <v-btn-toggle v-model="text" tile group>
+                <v-col
+                  ><v-row id="frow">
+                    <v-btn depressed class="timebtn" disabled>
+                      11:00
+                    </v-btn>
+                    <v-btn depressed id="tr" class="timebtn">
+                      11:30
+                    </v-btn>
+                    <v-btn depressed class="timebtn">
+                      12:00
+                    </v-btn></v-row
+                  >
+                  <v-row id="frow">
+                    <v-btn depressed class="timebtn" disabled>
+                      12:30
+                    </v-btn>
+                    <v-btn depressed id="tr" class="timebtn">
+                      13:00
+                    </v-btn>
+                    <v-btn depressed class="timebtn" disabled> 13:30 </v-btn>
+                  </v-row></v-col
+                >
+              </v-btn-toggle>
+            </v-tab-item>
+            <v-tab-item>
+              <v-btn-toggle v-model="text" tile group>
+                <v-col
+                  ><v-row id="frow">
+                    <v-btn depressed class="timebtn">
+                      11:00
+                    </v-btn>
+                    <v-btn depressed id="tr" class="timebtn" disabled>
+                      11:30
+                    </v-btn>
+                    <v-btn depressed class="timebtn" disabled>
+                      12:00
+                    </v-btn></v-row
+                  >
+                  <v-row id="frow">
+                    <v-btn depressed class="timebtn" disabled>
+                      12:30
+                    </v-btn>
+                    <v-btn depressed id="tr" class="timebtn">
+                      13:00
+                    </v-btn>
+                    <v-btn depressed class="timebtn" disabled> 13:30 </v-btn>
+                  </v-row></v-col
+                >
+              </v-btn-toggle>
+            </v-tab-item>
+            <v-tab-item>
+              <v-btn-toggle v-model="text" tile group>
+                <v-col
+                  ><v-row id="frow">
+                    <v-btn depressed class="timebtn">
+                      11:00
+                    </v-btn>
+                    <v-btn depressed id="tr" class="timebtn" disabled>
+                      11:30
+                    </v-btn>
+                    <v-btn depressed class="timebtn">
+                      12:00
+                    </v-btn></v-row
+                  >
+                  <v-row id="frow">
+                    <v-btn depressed class="timebtn">
+                      12:30
+                    </v-btn>
+                    <v-btn depressed id="tr" class="timebtn" disabled>
+                      13:00
+                    </v-btn>
+                    <v-btn depressed class="timebtn"> 13:30 </v-btn>
+                  </v-row></v-col
+                >
+              </v-btn-toggle>
+            </v-tab-item>
+          </v-tabs>
         </v-col>
       </v-card>
       <v-card id="tfbox" flat>
@@ -83,6 +155,7 @@
             height="auto"
             style="width:600px;"
           ></v-textarea>
+          <v-file-input multiple placeholder="Optional"></v-file-input>
         </v-col>
       </v-card>
       <v-card id="subbox" flat>

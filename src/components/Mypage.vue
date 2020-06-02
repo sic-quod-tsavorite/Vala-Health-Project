@@ -9,53 +9,64 @@
           replies from your doctor and get e-consulation.
         </p>
         <v-row justify="center">
-          <div id="vid"></div>
+          <v-expansion-panels hover flat id="panels">
+            <v-expansion-panel v-for="(item, i) in 1" :key="i">
+              <v-expansion-panel-header
+                >Quick guide to your personal page</v-expansion-panel-header
+              >
+              <v-expansion-panel-content>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/UxkljtupW5A"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
         </v-row>
         <div id="txtbox">
           <v-container id="txtbox1">
             <v-col>
               <v-row>
                 <div id="c1">
-                  <router-link class="routerLink" to="/Booking">
-                    <h3>Book an appointment</h3> </router-link
+                  <a class="routerLink" href="/Booking">
+                    <h3>Book an appointment</h3> </a
                   >Here you can book an appointment, find available times,
                   pricing plans and contact options. There is also an optional
                   self test below, to help you find the fitting help you need.
                   <br />
-                  <router-link class="routerLink" to="/Booking"
-                    >Book an appointment </router-link
+                  <a class="routerLink" href="/Booking">Book an appointment </a
                   >or
-                  <router-link class="routerLink" to="/Selftest"
-                    >Find the right Doctor for you.</router-link
-                  >
+                  <a class="routerLink" href="/Selftest">
+                    Find the right Doctor for you.
+                  </a>
                 </div>
 
                 <div id="c2">
                   <!-- skal sendes til new -->
-                  <router-link class="routerLink" to="/Msg">
+                  <a href="/Msg">
                     <h3>E-consultation</h3>
-                  </router-link>
+                  </a>
                   <i>(Included in the monthly subscription plans)</i>
                   <br />Here you can write a message to one of our doctors. If
                   you have more complicated questions we would advise booking an
                   appointment.
                   <br />
-                  <router-link class="routerLink" to="/Msg"
-                    >E-consultation</router-link
-                  >
+                  <a class="routerLink" href="/Msg">E-consultation</a>
                 </div>
               </v-row>
               <v-row>
                 <div id="c3">
                   <!-- skal sendes til unread -->
-                  <router-link class="routerLink" to="/Msg">
-                    <h3>Replies from the doctor (0)</h3> </router-link
+                  <a class="routerLink" href="/Msg">
+                    <h3>Replies from the doctor (0)</h3> </a
                   >Here you can read your unread replies from your doctor, sent
                   messages, previous and current conversations
                   <br />
-                  <router-link class="routerLink" to="/Msg"
-                    >Replies from the doctor</router-link
-                  >
+                  <a class="routerLink" href="/Msg">Replies from the doctor</a>
                 </div>
 
                 <div id="c4">
@@ -119,6 +130,9 @@ export default {
 <style lang="scss">
 * {
   font-family: 'Raleway', sans-serif;
+  a {
+    text-decoration: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -142,10 +156,14 @@ export default {
     p {
       padding: 5% auto;
     }
-    #vid {
-      background-color: black;
-      min-height: 40vh;
-      width: 50%;
+    #panels {
+      min-height: auto;
+      width: auto;
+      max-width: 100%;
+      white-space: nowrap;
+      iframe {
+        max-width: 100%;
+      }
     }
     #txtbox {
       background-color: white;
@@ -251,6 +269,7 @@ export default {
     min-width: 70vw;
     width: 80%;
     margin-top: -35px;
+    contain: content;
     h1 {
       margin-top: 5%;
       text-align: left;
@@ -264,13 +283,14 @@ export default {
       margin-right: 20px;
       font-size: 0.9em;
     }
-    #vid {
-      background-color: black;
-      min-height: 40vh;
-      width: 50%;
-      width: 600px;
-      margin-left: 20px;
-      margin-right: 20px;
+    #panels {
+      min-height: auto;
+      width: auto;
+      max-width: 100%;
+      white-space: nowrap;
+      iframe {
+        max-width: 100%;
+      }
     }
     #txtbox {
       background-color: white;

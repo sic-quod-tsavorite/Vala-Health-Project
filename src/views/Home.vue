@@ -3,26 +3,26 @@
     <v-app-bar class="header" color="white" app flat>
       <div id="nav-left"></div>
       <div id="nav-center">
-        <router-link class="routerLink" to="/">
+        <a href="#">
           <img src="https://valahealth.com/img/vala-logo.svg" width="100" />
-        </router-link>
+        </a>
       </div>
       <div id="nav-right">
-        <router-link class="routerLink" to="/login">
+        <a href="/login" class="routerLink">
           <v-btn id="loginbtn" depressed>
             Login
           </v-btn>
-        </router-link>
+        </a>
       </div>
     </v-app-bar>
     <v-img id="banner" src="../assets/fpBanner.png" height="30vw" width="100vw">
       <h1>Affordable, private online mental health support</h1>
       <v-row justify="center">
-        <router-link class="routerLink" to="/login">
+        <a href="/login" class="routerLink">
           <v-btn depressed outlined rounded color="white" x-large id="bannerBtn"
             >Book now</v-btn
           >
-        </router-link>
+        </a>
       </v-row>
     </v-img>
     <v-container>
@@ -125,9 +125,9 @@
                 health and social care appointments from home or wherever is
                 convenient.
               </h3>
-              <router-link class="routerLink" to="#">
+              <a class="routerLink" href="#">
                 <v-btn outlined rounded large>About Us</v-btn>
-              </router-link>
+              </a>
             </div>
           </v-card>
         </v-col>
@@ -148,16 +148,16 @@
         <v-col cols="auto">
           <v-card class="valaInf" id="valaInfW">
             <h2>Ready to speak to Vala?</h2>
-            <router-link class="routerLink" to="/login">
+            <a class="routerLink" href="/login">
               <v-btn outlined rounded large id="valaInfBtn">Book Now</v-btn>
-            </router-link>
+            </a>
             <h3 id="valaH3noM">
               Before booking can you run a survey and find the doctor that is
               just right for you!
             </h3>
-            <router-link class="routerLink" to="/login">
+            <a class="routerLink" href="/login">
               <v-btn outlined rounded large id="valaInfBtn">Run Survey</v-btn>
-            </router-link>
+            </a>
           </v-card>
         </v-col>
       </v-row>
@@ -172,9 +172,9 @@
               health and social care appointments from home or wherever is
               convenient.
             </h3>
-            <router-link class="routerLink" to="#">
+            <a class="routerLink" href="#">
               <v-btn outlined rounded large>About Us</v-btn>
-            </router-link>
+            </a>
           </v-card>
         </v-col>
         <v-col cols="auto">
@@ -200,16 +200,16 @@
         <v-col cols="auto">
           <v-card class="valaInf" id="valaInfW">
             <h2>Ready to speak to Vala?</h2>
-            <router-link class="routerLink" to="/login">
+            <a class="routerLink" href="/login">
               <v-btn outlined rounded large id="valaInfBtn">Book Now</v-btn>
-            </router-link>
+            </a>
             <h2>
               Before booking can you run a survey and find the doctor that is
               just right for you!
             </h2>
-            <router-link class="routerLink" to="/login">
+            <a class="routerLink" href="/login">
               <v-btn outlined rounded large id="valaInfBtn">Run Survey</v-btn>
-            </router-link>
+            </a>
           </v-card>
         </v-col>
       </v-row>
@@ -427,11 +427,11 @@
       <h1>
         Ready to speak to Vala?
       </h1>
-      <router-link class="routerLink" to="/login">
+      <a class="routerLink" href="/login">
         <v-btn outlined rounded large width="200px" color="white" id="bookBtn"
           >Book</v-btn
         >
-      </router-link>
+      </a>
     </v-container>
     <div id="trustpilot">
       <v-container id="trustCont">
@@ -541,6 +541,8 @@ export default {};
   text-align: center;
   padding: 5%;
   background: rgba(243, 243, 243, 0.8);
+  contain: content;
+  overflow-y: auto;
   h1 {
     font-family: walkway-black;
     margin-bottom: 2%;
@@ -570,6 +572,8 @@ export default {};
     width: 100%;
     height: 100%;
     padding: 5%;
+    contain: content;
+    overflow-y: auto;
   }
 }
 #valaInfW {
@@ -596,6 +600,8 @@ export default {};
     width: 100%;
     height: 100%;
     padding: 10%;
+    contain: content;
+    overflow-y: auto;
   }
   h4 {
     font-size: 20px;
@@ -893,8 +899,8 @@ export default {};
 }
 @media (min-width: 1904px) {
   .valaInf {
-    width: 40vw;
-    height: 25vw;
+    width: 45.2vw;
+    height: 30vw;
     h2,
     h3 {
       font-size: 25px;
@@ -904,7 +910,8 @@ export default {};
     }
   }
   #userCard {
-    width: 40vw;
+    max-width: unset;
+    width: 45vw;
   }
 }
 @media (min-width: 2172px) {
@@ -914,6 +921,9 @@ export default {};
   .valaInf {
     width: 30vw;
     height: 25vw;
+  }
+  #userCard {
+    max-width: 700px;
   }
 }
 </style>

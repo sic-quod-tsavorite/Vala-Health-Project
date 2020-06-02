@@ -18,11 +18,11 @@
       </v-col>
     </v-card>
     <v-row id="brow">
-      <router-link class="routerLink" to="/">
+      <a class="routerLink" href="/Mypage">
         <v-btn rounded id="bCancel">Cancel</v-btn>
-      </router-link>
-      <router-link class="routerLink" to="/Thanks"
-        ><v-btn rounded id="bSubmit">Next</v-btn></router-link
+      </a>
+      <a class="routerLink" href="/Thanks"
+        ><v-btn rounded id="bSubmit">Next</v-btn></a
       >
     </v-row>
   </v-app>
