@@ -14,7 +14,7 @@
     "vue-quick-chat": "^1.2.0",
     "vue-router": "^3.1.5",
     "vue2-smooth-scroll": "^1.2.0",
-    "vuetify": "^2.2.11"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",
